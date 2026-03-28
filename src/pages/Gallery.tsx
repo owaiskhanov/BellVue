@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
+import ImageSliderModal from '../components/ImageSliderModal';
 
 export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState<{ src: string; label: string } | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
     { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%201.png", label: "Gallery Image 1" },
@@ -42,7 +42,7 @@ export default function Gallery() {
               transition={{duration:0.4, delay: i * 0.05}}
               key={i} 
               className="relative group overflow-hidden rounded-2xl shadow-sm cursor-pointer aspect-[4/3]"
-              onClick={() => setSelectedImage(img)}
+              onClick={() => setSelectedIndex(i)}
             >
               <img 
                 src={img.src} 
@@ -61,27 +61,12 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
-      {selectedImage && (
-        <div className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4">
-          <button 
-            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-            onClick={() => setSelectedImage(null)}
-          >
-            <X className="w-10 h-10" />
-          </button>
-          <div className="max-w-5xl w-full flex flex-col items-center">
-            <img 
-              src={selectedImage.src} 
-              alt={selectedImage.label} 
-              className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
-            <p className="text-white text-2xl font-bold mt-6">{selectedImage.label}</p>
-          </div>
-        </div>
-      )}
+      <ImageSliderModal 
+        images={images}
+        initialIndex={selectedIndex ?? 0}
+        isOpen={selectedIndex !== null}
+        onClose={() => setSelectedIndex(null)}
+      />
     </div>
   );
 }

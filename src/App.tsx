@@ -13,6 +13,7 @@ import Departments from './pages/Departments';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Achievements from './pages/Achievements';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('HOME');
@@ -34,6 +35,8 @@ export default function App() {
         return <Services />;
       case 'GALLERY':
         return <Gallery />;
+      case 'ACHIEVEMENTS':
+        return <Achievements />;
       case 'CONTACT':
         return <Contact />;
       default:

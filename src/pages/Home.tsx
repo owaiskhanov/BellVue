@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HeartPulse, Activity, Stethoscope, Users, Clock, Bed, ShieldCheck, Award, ThumbsUp, Heart, Brain, Bone, Pill } from 'lucide-react';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
+import ImageSliderModal from '../components/ImageSliderModal';
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
 }
 
 export default function Home({ setActiveTab }: HomeProps) {
+  const [selectedAchievementIndex, setSelectedAchievementIndex] = useState<number | null>(null);
+
+  const achievementImages = [
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Caner%20%20MOC.jpg", alt: "Achievement 1" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/dr%20Lulla%20dad.jpeg", alt: "Achievement 2" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/miday%2023.jpg", alt: "Achievement 3" }
+  ];
+
   const hospitalSchema = {
     "@context": "https://schema.org",
     "@type": "Hospital",
@@ -221,8 +230,62 @@ export default function Home({ setActiveTab }: HomeProps) {
         </div>
       </motion.section>
 
-      {/* Featured Doctors Preview */}
+      {/* Our Achievements Preview */}
       <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="flex justify-between items-end mb-12">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Achievements</h2>
+              <p className="text-lg text-gray-600">Celebrating excellence in healthcare and our commitment to the community.</p>
+            </div>
+            <button 
+              onClick={() => setActiveTab('ACHIEVEMENTS')}
+              className="hidden md:block text-primary font-semibold hover:underline"
+            >
+              View All Achievements →
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {achievementImages.map((item, i) => (
+              <div 
+                key={i} 
+                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all bg-white border border-gray-100 cursor-pointer"
+                onClick={() => setSelectedAchievementIndex(i)}
+              >
+                <div className="aspect-w-4 aspect-h-3 w-full h-64 bg-gray-200">
+                  <img 
+                    src={item.src} 
+                    alt={item.alt} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-8 text-center md:hidden">
+            <button 
+              onClick={() => setActiveTab('ACHIEVEMENTS')}
+              className="text-primary font-semibold hover:underline"
+            >
+              View All Achievements →
+            </button>
+          </div>
+        </div>
+      </motion.section>
+
+      <ImageSliderModal 
+        images={achievementImages}
+        initialIndex={selectedAchievementIndex ?? 0}
+        isOpen={selectedAchievementIndex !== null}
+        onClose={() => setSelectedAchievementIndex(null)}
+      />
+
+      {/* Featured Doctors Preview */}
+      <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-end mb-12">
             <div>

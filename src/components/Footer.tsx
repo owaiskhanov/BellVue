@@ -6,7 +6,7 @@ interface FooterProps {
 }
 
 export default function Footer({ setActiveTab }: FooterProps) {
-  const tabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'CONTACT'];
+  const tabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'CONTACT'];
 
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
