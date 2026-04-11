@@ -23,7 +23,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
             />
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Trusted healthcare in Mumbai since 1978. Evolving as a benchmark in quality healthcare available to one and all.
+            Trusted healthcare in Mumbai since 1983. Evolving as a benchmark in quality healthcare available to one and all.
           </p>
         </div>
 

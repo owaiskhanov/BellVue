@@ -44,7 +44,7 @@ export default function Home({ setActiveTab }: HomeProps) {
     <div className="w-full">
       <SEO 
         title="Home" 
-        description="Belle Vue Multi Speciality Hospital in Mumbai. Providing compassionate care and advanced medical facilities since 1978."
+        description="Belle Vue Multi Speciality Hospital in Mumbai. Providing compassionate care and advanced medical facilities since 1983."
         schema={hospitalSchema}
       />
       {/* Hero Section */}
@@ -60,13 +60,13 @@ export default function Home({ setActiveTab }: HomeProps) {
         <div className="relative container mx-auto px-6 py-32 md:py-48 flex flex-col items-start justify-center">
           <div className="max-w-2xl animate-fade-in-up">
             <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary-light border border-primary/30 text-sm font-semibold tracking-wider mb-6">
-              ESTABLISHED 1978
+              ESTABLISHED 1983
             </span>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
               Your Health, <br/><span className="text-primary">Our Priority</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-10 font-light">
-              Trusted healthcare in Mumbai since 1978. Compassionate care by experienced professionals.
+              Trusted healthcare in Mumbai since 1983. Compassionate care by experienced professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
