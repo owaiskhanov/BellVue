@@ -18,7 +18,12 @@ export default function Achievements() {
     { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/NOmination%202018.jpg", alt: "Achievement 9" },
     { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/presco24.png", alt: "Achievement 10" },
     { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Shreyas.jpeg", alt: "Achievement 11" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/tee%20foundation%20corona.jpg", alt: "Achievement 12" }
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/tee%20foundation%20corona.jpg", alt: "Achievement 12" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Mumbai%20Mirror%20rankings%20(1).jpeg", alt: "Mumbai Mirror Rankings 1" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Mumbai%20Mirror%20rankings%20(2).jpeg", alt: "Mumbai Mirror Rankings 2" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Mumbai%20Mirror%20rankings%20(3).jpeg", alt: "Mumbai Mirror Rankings 3" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Mumbai%20Mirror%20rankings%20(4).jpeg", alt: "Mumbai Mirror Rankings 4" },
+    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Mumbai%20Mirror%20rankings%20(5).jpeg", alt: "Mumbai Mirror Rankings 5" }
   ];
 
   return (
