@@ -48,46 +48,20 @@ export default function Home({ setActiveTab }: HomeProps) {
         schema={hospitalSchema}
       />
       {/* Hero Section */}
-      <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className="relative bg-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-            alt="Hospital Building" 
-            className="w-full h-full object-cover opacity-40"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-        <div className="relative container mx-auto px-6 py-32 md:py-48 flex flex-col items-start justify-center">
-          <div className="max-w-2xl animate-fade-in-up">
-            <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary-light border border-primary/30 text-sm font-semibold tracking-wider mb-6">
-              ESTABLISHED 1983
-            </span>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-              Your Health, <br/><span className="text-primary">Our Priority</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 font-light">
-              Trusted healthcare in Mumbai since 1983. Compassionate care by experienced professionals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button 
-                onClick={() => setActiveTab('CONTACT')}
-                className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Book Appointment
-              </button>
-              <button 
-                onClick={() => setActiveTab('DOCTORS')}
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-4 rounded-md font-semibold text-lg transition-all"
-              >
-                Our Doctors
-              </button>
-            </div>
-          </div>
+      <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className="w-full bg-black relative">
+        <div className="w-full aspect-video">
+          <iframe 
+            className="w-full h-full border-0" 
+            src="https://www.youtube.com/embed/ao0JMajstB0?rel=0&autoplay=1&mute=1" 
+            title="Belle Vue Multispecialty Hospital Video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+          ></iframe>
         </div>
       </motion.section>
 
       {/* Stats Bar */}
-      <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="bg-white border-b border-gray-100 relative z-10 -mt-12 mx-4 md:mx-12 rounded-xl shadow-xl overflow-hidden">
+      <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="bg-white border-b border-gray-100 relative z-10 mx-4 md:mx-12 mt-4 md:mt-8 rounded-xl shadow-xl overflow-hidden">
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-100">
           {[
             { icon: Award, label: "Experience", value: "45+ Years" },
