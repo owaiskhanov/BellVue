@@ -215,16 +215,31 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           
           {/* Mobile Department Dropdown */}
           <div className="w-full">
-            <button
-              onClick={() => setIsDeptDropdownOpen(!isDeptDropdownOpen)}
+            <div
               className={cn(
-                "w-full flex items-center justify-between px-4 py-3 text-sm font-semibold rounded-md",
-                activeTab === 'DEPARTMENT' ? "text-primary bg-red-50" : "text-gray-600 hover:bg-gray-50"
+                "w-full flex items-center justify-between px-4 py-1 rounded-md",
+                activeTab === 'DEPARTMENT' ? "bg-red-50" : "hover:bg-gray-50"
               )}
             >
-              <span>DEPARTMENT</span>
-              <ChevronDown className={cn("w-4 h-4 transition-transform", isDeptDropdownOpen && "rotate-180")} />
-            </button>
+              <button
+                onClick={() => {
+                  setActiveTab('DEPARTMENT');
+                  setIsMobileMenuOpen(false);
+                }}
+                className={cn(
+                  "flex-grow text-left py-2 text-sm font-semibold",
+                  activeTab === 'DEPARTMENT' ? "text-primary" : "text-gray-600"
+                )}
+              >
+                DEPARTMENT
+              </button>
+              <button
+                onClick={() => setIsDeptDropdownOpen(!isDeptDropdownOpen)}
+                className="p-2"
+              >
+                <ChevronDown className={cn("w-4 h-4 transition-transform text-gray-600", isDeptDropdownOpen && "rotate-180")} />
+              </button>
+            </div>
             {isDeptDropdownOpen && (
               <div className="pl-6 pr-4 py-2 space-y-1">
                 {departments.map((dept, index) => (
