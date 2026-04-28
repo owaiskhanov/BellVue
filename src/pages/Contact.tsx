@@ -103,17 +103,18 @@ export default function Contact() {
             </div>
 
             {/* Map */}
-            <div className="mt-10 rounded-xl overflow-hidden h-64 border border-gray-200">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.754751430035!2d72.829158!3d19.118408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c22e0a2b95%3A0x6a2c20757a79e651!2sBelle%20Vue%20Multispeciality%20Hospital!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Hospital Location"
-              ></iframe>
+            <div className="mt-10 rounded-xl overflow-hidden h-64 border border-gray-200 bg-gray-100 flex flex-col items-center justify-center relative">
+              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")' }}></div>
+              <MapPin className="w-12 h-12 text-gray-400 mb-4 z-10" />
+              <p className="text-gray-600 font-medium mb-4 z-10">Click to view our location on Google Maps</p>
+              <a 
+                href="https://www.google.com/maps/place/Belle+Vue+Multispeciality+Hospital/@19.118408,72.829158,15z/data=!4m2!3m1!1s0x0:0x6a2c20757a79e651?sa=X&ved=2ahUKEwjH-7qJm-aDAxUQRmwGHXgOAp0Q_BJ6BAgQEAA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="z-10 bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-sm"
+              >
+                Open Google Maps
+              </a>
             </div>
           </motion.div>
 

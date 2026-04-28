@@ -52,10 +52,11 @@ export default function Home({ setActiveTab }: HomeProps) {
         <div className="w-full aspect-video">
           <iframe 
             className="w-full h-full border-0" 
-            src="https://www.youtube.com/embed/ao0JMajstB0?rel=0&autoplay=1&mute=1" 
+            src="https://www.youtube-nocookie.com/embed/ao0JMajstB0?rel=0&autoplay=1&mute=1" 
             title="Belle Vue Multispecialty Hospital Video" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </motion.section>
