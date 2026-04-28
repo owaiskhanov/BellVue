@@ -142,7 +142,7 @@ Your body’s warning signs are its way of asking for help. If you experience an
     author: "Dr. General Medicine",
     date: "April 10, 2026",
     category: "General Medicine",
-    imageUrl: "https://images.unsplash.com/photo-1584036561566-baf8b5f14ea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1505576391880-b3f9d713dc4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "how-often-full-body-checkup",
