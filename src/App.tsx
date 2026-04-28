@@ -14,6 +14,7 @@ import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Achievements from './pages/Achievements';
+import Blog from './pages/Blog';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('HOME');
@@ -37,6 +38,8 @@ export default function App() {
         return <Gallery />;
       case 'ACHIEVEMENTS':
         return <Achievements />;
+      case 'BLOG':
+        return <Blog />;
       case 'CONTACT':
         return <Contact />;
       default:

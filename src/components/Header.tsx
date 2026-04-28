@@ -12,7 +12,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
   const [isDeptDropdownOpen, setIsDeptDropdownOpen] = useState(false);
   const deptDropdownRef = useRef<HTMLDivElement>(null);
 
-  const tabs = ['HOME', 'DOCTORS', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'CONTACT'];
+  const tabs = ['HOME', 'DOCTORS', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
   
   const departments = [
     "Consulting Chambers",
@@ -166,6 +166,16 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           </button>
 
           <button
+            onClick={() => setActiveTab('BLOG')}
+            className={cn(
+              "px-4 py-2 text-sm font-semibold rounded-md transition-colors",
+              activeTab === 'BLOG' ? "text-primary bg-red-50" : "text-gray-600 hover:text-primary hover:bg-gray-50"
+            )}
+          >
+            BLOG
+          </button>
+
+          <button
             onClick={() => setActiveTab('CONTACT')}
             className={cn(
               "px-4 py-2 text-sm font-semibold rounded-md transition-colors",
@@ -262,7 +272,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
             )}
           </div>
 
-          {['SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'CONTACT'].map((tab) => (
+          {['SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'].map((tab) => (
             <button
               key={tab}
               onClick={() => {
