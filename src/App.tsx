@@ -39,7 +39,7 @@ export default function App() {
       case 'ACHIEVEMENTS':
         return <Achievements />;
       case 'BLOG':
-        return <Blog />;
+        return <Blog setActiveTab={setActiveTab} />;
       case 'CONTACT':
         return <Contact />;
       default:

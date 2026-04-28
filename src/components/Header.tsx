@@ -114,6 +114,15 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
             
             {isDeptDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-100 rounded-lg shadow-xl py-2 z-50">
+                <button
+                  onClick={() => {
+                    setActiveTab('DEPARTMENT');
+                    setIsDeptDropdownOpen(false);
+                  }}
+                  className="w-full text-left px-4 py-2 text-sm font-semibold text-primary hover:bg-red-50 transition-colors border-b border-gray-100 mb-1"
+                >
+                  View All Departments
+                </button>
                 {departments.map((dept, index) => (
                   <button
                     key={index}
@@ -225,33 +234,30 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           
           {/* Mobile Department Dropdown */}
           <div className="w-full">
-            <div
+            <button
+              onClick={() => setIsDeptDropdownOpen(!isDeptDropdownOpen)}
               className={cn(
-                "w-full flex items-center justify-between px-4 py-1 rounded-md",
-                activeTab === 'DEPARTMENT' ? "bg-red-50" : "hover:bg-gray-50"
+                "w-full flex items-center justify-between px-4 py-3 rounded-md transition-colors",
+                activeTab === 'DEPARTMENT' ? "bg-red-50 text-primary" : "text-gray-600 hover:bg-gray-50"
               )}
             >
-              <button
-                onClick={() => {
-                  setActiveTab('DEPARTMENT');
-                  setIsMobileMenuOpen(false);
-                }}
-                className={cn(
-                  "flex-grow text-left py-2 text-sm font-semibold",
-                  activeTab === 'DEPARTMENT' ? "text-primary" : "text-gray-600"
-                )}
-              >
-                DEPARTMENT
-              </button>
-              <button
-                onClick={() => setIsDeptDropdownOpen(!isDeptDropdownOpen)}
-                className="p-2"
-              >
-                <ChevronDown className={cn("w-4 h-4 transition-transform text-gray-600", isDeptDropdownOpen && "rotate-180")} />
-              </button>
-            </div>
+              <span className="text-sm font-semibold text-left">DEPARTMENT</span>
+              <ChevronDown className={cn("w-4 h-4 transition-transform", isDeptDropdownOpen && "rotate-180")} />
+            </button>
             {isDeptDropdownOpen && (
-              <div className="pl-6 pr-4 py-2 space-y-1">
+              <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 rounded-b-md">
+                <button
+                  onClick={() => {
+                    setActiveTab('DEPARTMENT');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={cn(
+                    "w-full text-left px-4 py-2 text-sm font-semibold rounded-md",
+                    activeTab === 'DEPARTMENT' ? "text-primary" : "text-gray-700 hover:text-primary"
+                  )}
+                >
+                  View All Departments
+                </button>
                 {departments.map((dept, index) => (
                   <button
                     key={index}
@@ -263,7 +269,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                       }
                       setIsMobileMenuOpen(false);
                     }}
-                    className="w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-primary hover:bg-red-50 rounded-md"
+                    className="w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition-colors"
                   >
                     {dept}
                   </button>

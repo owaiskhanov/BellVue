@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import { blogPosts, BlogPost } from '../data/blogData';
 import Markdown from 'react-markdown';
 
-export default function Blog() {
+export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => void }) {
   const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
 
   const selectedPost = blogPosts.find(p => p.id === selectedPostId);
@@ -75,6 +75,7 @@ export default function Blog() {
                         src={post.imageUrl} 
                         alt={post.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        referrerPolicy="no-referrer"
                       />
                       <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center shadow-sm">
                         <Tag className="w-3 h-3 mr-1" />
@@ -120,6 +121,7 @@ export default function Blog() {
                 src={selectedPost?.imageUrl} 
                 alt={selectedPost?.title}
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
               
@@ -172,7 +174,7 @@ export default function Blog() {
                         className="group cursor-pointer flex space-x-4"
                         onClick={() => setSelectedPostId(post.id)}
                       >
-                        <img src={post.imageUrl} className="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt={post.title} />
+                        <img src={post.imageUrl} className="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt={post.title} referrerPolicy="no-referrer" />
                         <div>
                           <h4 className="font-bold text-sm text-gray-800 group-hover:text-primary transition-colors line-clamp-2 leading-snug mb-1">
                             {post.title}
@@ -187,7 +189,7 @@ export default function Blog() {
                     <button 
                       onClick={() => {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
-                        // Add an event to open Contact form or navigate to Book appointment if that was supported in App state directly
+                        setActiveTab('CONTACT');
                       }}
                       className="w-full bg-gray-900 hover:bg-black text-white px-6 py-4 rounded-xl font-semibold transition-colors flex items-center justify-center space-x-2"
                     >

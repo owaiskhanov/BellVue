@@ -20,23 +20,15 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const subject = encodeURIComponent(`New Appointment Request: ${formData.department}`);
-    const body = encodeURIComponent(`Name: ${formData.name}
-Phone: ${formData.phone}
-Email: ${formData.email}
-Department: ${formData.department}
-Preferred Date: ${formData.date}
-
-Message:
-${formData.message}`);
-    
-    window.location.href = `mailto:bvmsph@gmail.com?subject=${subject}&body=${body}`;
+    // In a real application, you would send this to a backend API.
+    // For this demo, we'll just show the success state since mailto: links 
+    // can break the iframe preview environment.
 
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({ name: '', phone: '', email: '', department: '', date: '', message: '' });
-    }, 3000);
+    }, 4000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
