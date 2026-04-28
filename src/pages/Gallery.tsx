@@ -47,6 +47,8 @@ export default function Gallery() {
               <img 
                 src={img.src} 
                 alt={img.label} 
+                width={800}
+                height={600}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 referrerPolicy="no-referrer"
                 loading="lazy"

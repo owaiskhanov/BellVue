@@ -53,6 +53,8 @@ export default function Home({ setActiveTab }: HomeProps) {
           <img 
             src="https://img.youtube.com/vi/ao0JMajstB0/maxresdefault.jpg" 
             alt="Belle Vue Multispecialty Hospital Video" 
+            width={1280}
+            height={720}
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
             referrerPolicy="no-referrer"
           />
@@ -73,10 +75,10 @@ export default function Home({ setActiveTab }: HomeProps) {
             { icon: Clock, label: "Emergency Care", value: "24/7" },
             { icon: Bed, label: "ICU Beds", value: "11-Bed" }
           ].map((stat, i) => (
-            <div key={i} className="p-8 flex flex-col items-center text-center bg-white hover:bg-gray-50 transition-colors">
-              <stat.icon className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</h3>
-              <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">{stat.label}</p>
+            <div key={i} className="p-4 md:p-8 flex flex-col items-center text-center bg-white hover:bg-gray-50 transition-colors">
+              <stat.icon className="w-8 h-8 md:w-10 md:h-10 text-primary mb-3 md:mb-4" />
+              <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-1">{stat.value}</h3>
+              <p className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -86,7 +88,7 @@ export default function Home({ setActiveTab }: HomeProps) {
       <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
                 <ShieldCheck className="w-7 h-7 text-primary" />
               </div>
@@ -95,7 +97,7 @@ export default function Home({ setActiveTab }: HomeProps) {
                 "To evolve as a benchmark in quality healthcare available to one and all."
               </p>
             </div>
-            <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
                 <HeartPulse className="w-7 h-7 text-primary" />
               </div>
@@ -104,7 +106,7 @@ export default function Home({ setActiveTab }: HomeProps) {
                 "To ensure accessible and affordable quality healthcare by compassionate medical professionals to all."
               </p>
             </div>
-            <div className="bg-primary p-10 rounded-2xl shadow-md text-white">
+            <div className="bg-primary p-6 md:p-10 rounded-2xl shadow-md text-white">
               <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mb-6">
                 <Award className="w-7 h-7 text-white" />
               </div>
@@ -158,6 +160,8 @@ export default function Home({ setActiveTab }: HomeProps) {
               <img 
                 src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                 alt="Medical Team" 
+                width={1000}
+                height={600}
                 className="rounded-2xl shadow-2xl object-cover h-[600px] w-full"
                 referrerPolicy="no-referrer"
                 loading="lazy"
@@ -188,11 +192,13 @@ export default function Home({ setActiveTab }: HomeProps) {
               </div>
 
               {/* Medical Director Spotlight */}
-              <div className="mt-12 p-6 bg-white rounded-xl border border-gray-200 shadow-sm flex items-center space-x-6">
+              <div className="mt-8 p-4 md:p-6 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
                 <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden shrink-0 border-2 border-primary">
                   <img 
                     src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/VijayNLulla-2.jpg" 
                     alt="Dr. Vijay N. Lulla" 
+                    width={80}
+                    height={80}
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -235,6 +241,8 @@ export default function Home({ setActiveTab }: HomeProps) {
                   <img 
                     src={item.src} 
                     alt={item.alt} 
+                    width={600}
+                    height={450}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -288,7 +296,7 @@ export default function Home({ setActiveTab }: HomeProps) {
               <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-gray-100">
                 <div className="w-24 h-24 mx-auto bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-inner overflow-hidden border-2 border-primary/20">
                   {doc.img ? (
-                    <img src={doc.img} alt={doc.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" />
+                    <img src={doc.img} alt={doc.name} width={96} height={96} className="w-full h-full object-cover" referrerPolicy="no-referrer" loading="lazy" />
                   ) : (
                     doc.name.split(' ').map(n => n[0]).join('').replace('.', '').substring(0, 2)
                   )}

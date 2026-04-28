@@ -69,6 +69,8 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           <img 
             src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue-Logo-Favicon-full.png" 
             alt="Belle Vue Logo" 
+            width={200}
+            height={48}
             className="h-12 w-auto object-contain"
             referrerPolicy="no-referrer"
           />

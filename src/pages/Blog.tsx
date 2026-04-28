@@ -74,8 +74,11 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
                       <img 
                         src={post.imageUrl} 
                         alt={post.title}
+                        width={600}
+                        height={400}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         referrerPolicy="no-referrer"
+                        loading="lazy"
                       />
                       <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center shadow-sm">
                         <Tag className="w-3 h-3 mr-1" />
@@ -120,6 +123,8 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
               <img 
                 src={selectedPost?.imageUrl} 
                 alt={selectedPost?.title}
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -174,7 +179,7 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
                         className="group cursor-pointer flex space-x-4"
                         onClick={() => setSelectedPostId(post.id)}
                       >
-                        <img src={post.imageUrl} className="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt={post.title} referrerPolicy="no-referrer" />
+                        <img src={post.imageUrl} width={80} height={80} className="w-20 h-20 object-cover rounded-lg flex-shrink-0" alt={post.title} referrerPolicy="no-referrer" loading="lazy" />
                         <div>
                           <h4 className="font-bold text-sm text-gray-800 group-hover:text-primary transition-colors line-clamp-2 leading-snug mb-1">
                             {post.title}

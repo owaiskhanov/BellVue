@@ -17,6 +17,8 @@ export default function Footer({ setActiveTab }: FooterProps) {
             <img 
               src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue-Logo-Favicon-full.png" 
               alt="Belle Vue Logo" 
+              width={200}
+              height={64}
               className="h-16 w-auto object-contain"
               referrerPolicy="no-referrer"
               loading="lazy"

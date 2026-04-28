@@ -65,8 +65,11 @@ export default function Departments() {
                     <img 
                       src={dept.image} 
                       alt={dept.title} 
+                      width={600}
+                      height={400}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                       referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                     <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                       <dept.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
@@ -114,6 +117,8 @@ export default function Departments() {
                 <img 
                   src={selectedDept.image}
                   alt={selectedDept.title}
+                  width={800}
+                  height={600}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
