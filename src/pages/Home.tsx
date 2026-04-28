@@ -48,17 +48,20 @@ export default function Home({ setActiveTab }: HomeProps) {
         schema={hospitalSchema}
       />
       {/* Hero Section */}
-      <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className="w-full bg-black relative">
-        <div className="w-full aspect-video">
-          <iframe 
-            className="w-full h-full border-0" 
-            src="https://www.youtube-nocookie.com/embed/ao0JMajstB0?rel=0&autoplay=1&mute=1" 
-            title="Belle Vue Multispecialty Hospital Video" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
+      <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className="w-full bg-black relative group cursor-pointer border-b-4 border-primary">
+        <a href="https://www.youtube.com/watch?v=ao0JMajstB0" target="_blank" rel="noopener noreferrer" className="block w-full aspect-video relative overflow-hidden">
+          <img 
+            src="https://img.youtube.com/vi/ao0JMajstB0/maxresdefault.jpg" 
+            alt="Belle Vue Multispecialty Hospital Video" 
+            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-20 h-20 bg-primary/90 text-white rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-10 h-10 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </div>
+          </div>
+        </a>
       </motion.section>
 
       {/* Stats Bar */}
