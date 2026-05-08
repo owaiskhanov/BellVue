@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Phone, Mail, MapPin, Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { departmentsData } from '../data/departmentsData';
 
 interface HeaderProps {
   activeTab: string;
@@ -14,21 +15,6 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
 
   const tabs = ['HOME', 'DOCTORS', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
   
-  const departments = [
-    "Consulting Chambers",
-    "Cath Lab",
-    "ICU",
-    "Operation Theatres",
-    "Diabetic Foot",
-    "Radiology",
-    "Pathology Lab",
-    "Pharmacy",
-    "Rooms",
-    "Oncology",
-    "Dialysis Unit",
-    "Geriatric Centre"
-  ];
-
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (deptDropdownRef.current && !deptDropdownRef.current.contains(event.target as Node)) {
@@ -125,21 +111,21 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                 >
                   View All Departments
                 </button>
-                {departments.map((dept, index) => (
+                {departmentsData.map((dept) => (
                   <button
-                    key={index}
+                    key={dept.id}
                     onClick={() => {
-                      if (dept === "Geriatric Centre") {
-                        window.open("https://aajicare.in/", "_blank");
+                      if (dept.link) {
+                        window.open(dept.link, "_blank");
                       } else {
+                        window.location.hash = dept.id;
                         setActiveTab('DEPARTMENT');
-                        // In a real app we might scroll to the specific department
                       }
                       setIsDeptDropdownOpen(false);
                     }}
                     className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-primary transition-colors"
                   >
-                    {dept}
+                    {dept.title}
                   </button>
                 ))}
               </div>
@@ -218,7 +204,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-4 flex flex-col max-h-[80vh] overflow-y-auto">
-          {['HOME', 'DOCTORS'].map((tab) => (
+          {['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'].map((tab) => (
             <button
               key={tab}
               onClick={() => {
@@ -230,69 +216,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
                 activeTab === tab ? "text-primary bg-red-50" : "text-gray-600 hover:bg-gray-50"
               )}
             >
-              {tab}
-            </button>
-          ))}
-          
-          {/* Mobile Department Dropdown */}
-          <div className="w-full">
-            <button
-              onClick={() => setIsDeptDropdownOpen(!isDeptDropdownOpen)}
-              className={cn(
-                "w-full flex items-center justify-between px-4 py-3 rounded-md transition-colors",
-                activeTab === 'DEPARTMENT' ? "bg-red-50 text-primary" : "text-gray-600 hover:bg-gray-50"
-              )}
-            >
-              <span className="text-sm font-semibold text-left">DEPARTMENT</span>
-              <ChevronDown className={cn("w-4 h-4 transition-transform", isDeptDropdownOpen && "rotate-180")} />
-            </button>
-            {isDeptDropdownOpen && (
-              <div className="pl-6 pr-4 py-2 space-y-1 bg-gray-50/50 rounded-b-md">
-                <button
-                  onClick={() => {
-                    setActiveTab('DEPARTMENT');
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className={cn(
-                    "w-full text-left px-4 py-2 text-sm font-semibold rounded-md",
-                    activeTab === 'DEPARTMENT' ? "text-primary" : "text-gray-700 hover:text-primary"
-                  )}
-                >
-                  View All Departments
-                </button>
-                {departments.map((dept, index) => (
-                  <button
-                    key={index}
-                    onClick={() => {
-                      if (dept === "Geriatric Centre") {
-                        window.open("https://aajicare.in/", "_blank");
-                      } else {
-                        setActiveTab('DEPARTMENT');
-                      }
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className="w-full text-left px-4 py-2 text-sm text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition-colors"
-                  >
-                    {dept}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {['SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => {
-                setActiveTab(tab);
-                setIsMobileMenuOpen(false);
-              }}
-              className={cn(
-                "w-full text-left px-4 py-3 text-sm font-semibold rounded-md",
-                activeTab === tab ? "text-primary bg-red-50" : "text-gray-600 hover:bg-gray-50"
-              )}
-            >
-              {tab}
+              {tab === 'DEPARTMENT' ? 'DEPARTMENTS' : tab}
             </button>
           ))}
 

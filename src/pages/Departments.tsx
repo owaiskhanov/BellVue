@@ -18,6 +18,28 @@ export default function Departments() {
     return () => { document.body.style.overflow = 'unset'; };
   }, [selectedDeptId]);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && departmentsData.some(d => d.id === hash)) {
+        setSelectedDeptId(hash);
+      } else {
+        setSelectedDeptId(null);
+      }
+    };
+
+    // Check hash on mount
+    handleHashChange();
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handleClose = () => {
+    setSelectedDeptId(null);
+    window.history.pushState('', document.title, window.location.pathname + window.location.search);
+  };
+
   const departmentsSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
@@ -47,7 +69,7 @@ export default function Departments() {
             const CardWrapper = dept.link ? 'a' : 'div';
             const wrapperProps = dept.link 
               ? { href: dept.link, target: "_blank", rel: "noopener noreferrer" } 
-              : { onClick: () => setSelectedDeptId(dept.id!) };
+              : { onClick: () => window.location.hash = dept.id! };
 
             return (
               <motion.div 
@@ -98,7 +120,7 @@ export default function Departments() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 md:p-6"
           >
-            <div className="absolute inset-0 cursor-pointer" onClick={() => setSelectedDeptId(null)} />
+            <div className="absolute inset-0 cursor-pointer" onClick={handleClose} />
             <motion.div 
               initial={{ scale: 0.95, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
@@ -108,7 +130,7 @@ export default function Departments() {
             >
               <button 
                 className="absolute top-4 right-4 z-20 text-gray-500 hover:text-gray-900 bg-white/80 backdrop-blur-md hover:bg-gray-100 rounded-full p-2 transition-all"
-                onClick={() => setSelectedDeptId(null)}
+                onClick={handleClose}
               >
                 <X className="w-6 h-6" />
               </button>
