@@ -41,7 +41,7 @@ Take the first step today. Protect your health and the health of those around yo
     author: "Pulmonology & Wellness Team",
     date: "May 19, 2026",
     category: "Awareness",
-    imageUrl: "https://images.unsplash.com/photo-1596484552834-6a58f850d0a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: "ibd-awareness",

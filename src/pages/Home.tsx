@@ -112,7 +112,7 @@ export default function Home({ setActiveTab }: HomeProps) {
              
              <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-red-100 flex flex-col items-center text-center">
                <img 
-                 src="https://images.unsplash.com/photo-1596484552834-6a58f850d0a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 src="https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                  alt="World No Tobacco Day" 
                  width={800}
                  height={400}
