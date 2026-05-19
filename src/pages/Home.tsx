@@ -92,24 +92,40 @@ export default function Home({ setActiveTab }: HomeProps) {
              <p className="text-gray-600">Join us in spreading awareness for these important global health initiatives this May.</p>
            </div>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-             <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100 flex flex-col items-center text-center">
-               <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6">
-                 <Activity className="w-8 h-8" />
+             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-red-100 flex flex-col items-center text-center">
+               <img 
+                 src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="World IBD Day" 
+                 width={800}
+                 height={400}
+                 loading="lazy"
+                 className="w-full h-48 object-cover"
+                 referrerPolicy="no-referrer"
+               />
+               <div className="p-8 flex flex-col items-center flex-grow w-full">
+                 <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-2">World IBD Day</h3>
+                 <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 19</p>
+                 <p className="text-gray-600 mb-6 flex-grow">Raising awareness about Inflammatory Bowel Disease, including Crohn's disease and ulcerative colitis. Learn about symptoms, management, and breaking the stigma.</p>
+                 <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'ibd-awareness' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
                </div>
-               <h3 className="text-2xl font-bold text-gray-900 mb-2">World IBD Day</h3>
-               <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 19</p>
-               <p className="text-gray-600 mb-6 flex-grow">Raising awareness about Inflammatory Bowel Disease, including Crohn's disease and ulcerative colitis. Learn about symptoms, management, and breaking the stigma.</p>
-               <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'ibd-awareness' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
              </div>
              
-             <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100 flex flex-col items-center text-center">
-               <div className="w-16 h-16 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center mb-6">
-                 <Ban className="w-8 h-8" />
+             <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-red-100 flex flex-col items-center text-center">
+               <img 
+                 src="https://images.unsplash.com/photo-1596484552834-6a58f850d0a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="World No Tobacco Day" 
+                 width={800}
+                 height={400}
+                 loading="lazy"
+                 className="w-full h-48 object-cover"
+                 referrerPolicy="no-referrer"
+               />
+               <div className="p-8 flex flex-col items-center flex-grow w-full">
+                 <h3 className="text-2xl font-bold text-gray-900 mb-2 mt-2">World No Tobacco Day</h3>
+                 <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 31</p>
+                 <p className="text-gray-600 mb-6 flex-grow">Highlighting the health risks associated with tobacco use and advocating for effective policies to reduce tobacco consumption globally.</p>
+                 <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'no-tobacco-day' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
                </div>
-               <h3 className="text-2xl font-bold text-gray-900 mb-2">World No Tobacco Day</h3>
-               <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 31</p>
-               <p className="text-gray-600 mb-6 flex-grow">Highlighting the health risks associated with tobacco use and advocating for effective policies to reduce tobacco consumption globally.</p>
-               <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'no-tobacco-day' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
              </div>
            </div>
         </div>
