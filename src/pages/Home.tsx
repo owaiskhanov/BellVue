@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeartPulse, Activity, Stethoscope, Users, Clock, Bed, ShieldCheck, Award, ThumbsUp, Heart, Brain, Bone, Pill } from 'lucide-react';
+import { HeartPulse, Activity, Stethoscope, Users, Clock, Bed, ShieldCheck, Award, ThumbsUp, Heart, Brain, Bone, Pill, Ban, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
 import ImageSliderModal from '../components/ImageSliderModal';
@@ -81,6 +81,37 @@ export default function Home({ setActiveTab }: HomeProps) {
               <p className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">{stat.label}</p>
             </div>
           ))}
+        </div>
+      </motion.section>
+
+      {/* Awareness Section */}
+      <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="bg-red-50 border-y border-red-100 py-16 mt-16">
+        <div className="container mx-auto px-6">
+           <div className="text-center max-w-2xl mx-auto mb-10">
+             <h2 className="text-3xl font-bold text-gray-900 mb-4">Health Awareness Days</h2>
+             <p className="text-gray-600">Join us in spreading awareness for these important global health initiatives this May.</p>
+           </div>
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+             <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100 flex flex-col items-center text-center">
+               <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6">
+                 <Activity className="w-8 h-8" />
+               </div>
+               <h3 className="text-2xl font-bold text-gray-900 mb-2">World IBD Day</h3>
+               <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 19</p>
+               <p className="text-gray-600 mb-6 flex-grow">Raising awareness about Inflammatory Bowel Disease, including Crohn's disease and ulcerative colitis. Learn about symptoms, management, and breaking the stigma.</p>
+               <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'ibd-awareness' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
+             </div>
+             
+             <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100 flex flex-col items-center text-center">
+               <div className="w-16 h-16 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center mb-6">
+                 <Ban className="w-8 h-8" />
+               </div>
+               <h3 className="text-2xl font-bold text-gray-900 mb-2">World No Tobacco Day</h3>
+               <p className="inline-block bg-red-100 text-primary font-bold px-4 py-1 rounded-full mb-4">May 31</p>
+               <p className="text-gray-600 mb-6 flex-grow">Highlighting the health risks associated with tobacco use and advocating for effective policies to reduce tobacco consumption globally.</p>
+               <button onClick={() => { setActiveTab('BLOG'); setTimeout(() => window.dispatchEvent(new CustomEvent('openBlog', { detail: 'no-tobacco-day' })), 100); }} className="text-primary font-bold hover:text-red-700 transition-colors uppercase tracking-wider text-sm flex items-center group">Read Article <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" /></button>
+             </div>
+           </div>
         </div>
       </motion.section>
 

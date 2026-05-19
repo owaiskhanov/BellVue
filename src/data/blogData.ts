@@ -13,6 +13,68 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "no-tobacco-day",
+    title: "World No Tobacco Day: Clearing the Air for a Healthier Future",
+    excerpt: "Every May 31st, the world observes World No Tobacco Day to highlight the health risks of tobacco use and advocate for effective policies to reduce consumption.",
+    content: `Every May 31st, the world observes World No Tobacco Day to highlight the health risks of tobacco use and advocate for effective policies to reduce consumption. Tobacco use remains a leading preventable cause of death globally, affecting not just the smoker but everyone exposed to secondhand smoke.
+
+## The True Cost of Tobacco
+Tobacco doesn't just cause lung cancer; it's linked to a host of other severe health issues:
+- **Cardiovascular Disease:** Smoking damages blood vessels, leading to heart attacks and strokes.
+- **Respiratory Illnesses:** It exacerbates asthma and is the primary cause of Chronic Obstructive Pulmonary Disease (COPD).
+- **Other Cancers:** Tobacco is linked to cancers of the mouth, throat, esophagus, bladder, and kidney among others.
+- **Secondhand Smoke:** Non-smokers exposed to secondhand smoke face increased risks of heart disease and lung cancer. Children are particularly vulnerable.
+
+## Quitting is Possible 
+Quitting smoking is one of the best things you can do for your health, no matter how long you've smoked. The benefits begin almost immediately:
+- Within 20 minutes, your heart rate and blood pressure drop.
+- Within 12 hours, carbon monoxide levels in your blood return to normal.
+- Within a year, your risk of coronary heart disease is half that of a smoker's.
+
+## How We Can Help
+At Belle Vue Multispecialty Hospital, we offer comprehensive support for those looking to quit:
+- **Counseling & Behavioral Therapy:** Strategies to manage cravings and triggers.
+- **Nicotine Replacement Therapy:** Options like patches, gums, or lozenges to ease withdrawal symptoms.
+- **Medical Consultation:** Prescription medications that can help reduce cravings.
+
+Take the first step today. Protect your health and the health of those around you by choosing a smoke-free life.`,
+    author: "Pulmonology & Wellness Team",
+    date: "May 19, 2026",
+    category: "Awareness",
+    imageUrl: "https://images.unsplash.com/photo-1596484552834-6a58f850d0a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "ibd-awareness",
+    title: "Understanding Inflammatory Bowel Disease (IBD): Beyond the Surface",
+    excerpt: "May 19 marks World IBD Day, a time to raise awareness about Crohn's disease and ulcerative colitis. Learn about the symptoms, management, and living well with IBD.",
+    content: `May 19 marks World IBD Day, a vital opportunity to raise awareness about Inflammatory Bowel Disease (IBD)—a term for two conditions: Crohn's disease and ulcerative colitis. These chronic diseases cause inflammation in the gastrointestinal tract and can be both physically and emotionally debilitating.
+
+## Recognizing the Symptoms
+IBD symptoms can vary depending on the severity of inflammation and where it occurs, but common signs include:
+- Persistent diarrhea
+- Abdominal pain and cramping
+- Blood in the stool
+- Fatigue
+- Unintended weight loss
+
+Because these symptoms are similar to other gastrointestinal issues, proper diagnosis by a gastroenterologist is essential.
+
+## Management and Care
+While there is currently no cure for IBD, treatments have advanced significantly, aiming to reduce inflammation, relieve symptoms, and achieve long-term remission:
+- **Medications:** Anti-inflammatory drugs, immune system suppressors, and biologics are often prescribed.
+- **Diet and Nutrition:** Working with a dietitian to identify trigger foods and ensure adequate nutrient intake is crucial.
+- **Surgery:** In severe cases, surgery may be necessary to remove damaged portions of the digestive tract.
+
+## Breaking the Stigma
+Living with IBD can be isolating due to the nature of the symptoms. World IBD Day aims to break this stigma by encouraging open conversations and educating the public. Support from family, friends, and patient groups plays a significant role in improving the quality of life for those affected.
+
+If you or a loved one are experiencing symptoms of IBD, don't wait. Consult our experts at Belle Vue Multispecialty Hospital for a comprehensive evaluation and a personalized care plan.`,
+    author: "Gastroenterology Team",
+    date: "May 19, 2026",
+    category: "Awareness",
+    imageUrl: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     id: "cancer-health-awareness",
     title: "Cancer Health & Awareness: A Comprehensive Guide to Prevention, Detection, and Treatment",
     excerpt: "Understanding cancer is the first step in fighting it. Learn about prevention strategies, early detection methods, and modern treatment options.",

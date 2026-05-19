@@ -10,6 +10,16 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
 
   const selectedPost = blogPosts.find(p => p.id === selectedPostId);
 
+  React.useEffect(() => {
+    const handleOpenBlog = (e: CustomEvent<string>) => {
+      setSelectedPostId(e.detail);
+    };
+    
+    // Check if there was an event recently or register listener
+    window.addEventListener('openBlog', handleOpenBlog as EventListener);
+    return () => window.removeEventListener('openBlog', handleOpenBlog as EventListener);
+  }, []);
+
   // Scroll to top when a post is opened
   React.useEffect(() => {
     if (selectedPostId) {
