@@ -7,18 +7,18 @@ export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%201.png", label: "Gallery Image 1" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%202.png", label: "Gallery Image 2" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%203.png", label: "Gallery Image 3" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/image%204.png", label: "Gallery Image 4" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%205.png", label: "Gallery Image 5" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%206.png", label: "Gallery Image 6" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%207.png", label: "Gallery Image 7" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%208.png", label: "Gallery Image 8" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%209.png", label: "Gallery Image 9" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%2010.png", label: "Gallery Image 10" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%2011.png", label: "Gallery Image 11" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Gallery/Image%2012.png", label: "Gallery Image 12" }
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%201.png", label: "Gallery Image 1" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%202.png", label: "Gallery Image 2" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%203.png", label: "Gallery Image 3" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/image%204.png", label: "Gallery Image 4" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%205.png", label: "Gallery Image 5" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%206.png", label: "Gallery Image 6" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%207.png", label: "Gallery Image 7" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%208.png", label: "Gallery Image 8" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%209.png", label: "Gallery Image 9" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2010.png", label: "Gallery Image 10" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2011.png", label: "Gallery Image 11" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2012.png", label: "Gallery Image 12" }
   ];
 
   return (

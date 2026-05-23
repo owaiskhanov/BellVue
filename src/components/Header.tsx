@@ -53,7 +53,7 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           onClick={() => setActiveTab('HOME')}
         >
           <img 
-            src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue-Logo-Favicon-full.png" 
+            src="https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png" 
             alt="Belle Vue Logo" 
             width={200}
             height={48}

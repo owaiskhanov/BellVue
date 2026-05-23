@@ -67,8 +67,12 @@ export default function Doctors() {
               className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center group"
             >
               <div className="relative mb-4">
-                <div className="w-24 h-24 bg-red-50 rounded-full flex items-center justify-center text-primary text-2xl font-bold border-2 border-transparent group-hover:border-primary transition-colors">
-                  {doc.name.replace('Dr. ', '').split(' ').map(n => n[0]).join('').substring(0, 2)}
+                <div className="w-24 h-24 bg-red-50 rounded-full flex items-center justify-center text-primary text-2xl font-bold border-2 border-transparent group-hover:border-primary transition-colors overflow-hidden">
+                  {doc.image ? (
+                    <img src={doc.image} alt={doc.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  ) : (
+                    doc.name.replace('Dr. ', '').split(' ').map(n => n[0]).join('').substring(0, 2)
+                  )}
                 </div>
                 <div className={cn(
                   "absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-bold shadow-sm whitespace-nowrap",

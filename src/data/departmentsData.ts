@@ -6,7 +6,7 @@ export const departmentsData = [
     icon: Stethoscope, 
     title: "Consulting Chambers", 
     desc: "Multiple specialist OPD rooms for scheduled consultations",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Consulting%20Chamber.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Consulting%20Chamber.png",
     sections: [
       {
         title: "Expert Medical Professionals",
@@ -40,7 +40,7 @@ export const departmentsData = [
     icon: HeartPulse, 
     title: "Cath Lab", 
     desc: "State-of-the-art Philips FD-10 machine for cardiac procedures",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/CAT%20lab.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/CAT%20lab.png",
     sections: [
       {
         title: "Cat Lab – state-of-the-art Philips FD-10 machine",
@@ -78,7 +78,7 @@ export const departmentsData = [
     icon: Bed, 
     title: "ICU", 
     desc: "11 fully equipped beds, 24-hour emergency availability",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/ICU%20bed.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/ICU%20bed.png",
     sections: [
       {
         title: "ICU (11 beds 24 hours availability for any emergency )",
@@ -116,7 +116,7 @@ export const departmentsData = [
     icon: Activity, 
     title: "Operation Theatres", 
     desc: "2 OTs (minor + major), Laminar air flow",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Operation%20theatre%202.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Operation%20theatre%202.png",
     sections: [
       {
         title: "2 Operation theatres (minor, major)",
@@ -154,7 +154,7 @@ export const departmentsData = [
     icon: ActivitySquare, 
     title: "Diabetic Foot", 
     desc: "Dedicated podiatry and diabetic foot care unit",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Diabetic%20foot%20care.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Diabetic%20foot%20care.png",
     sections: [
       {
         title: "Diabetic foot",
@@ -192,7 +192,7 @@ export const departmentsData = [
     icon: Scan, 
     title: "Radiology", 
     desc: "Sonography, Digital X-ray, Echocardiography, Colour Doppler",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Radiology%20Department.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Radiology%20Department.png",
     sections: [
       {
         title: "Radiology Department – sonography & Xray",
@@ -230,7 +230,7 @@ export const departmentsData = [
     icon: TestTube, 
     title: "Pathology Lab", 
     desc: "Comprehensive in-house diagnostic lab",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Pathology%20lab.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Pathology%20lab.png",
     sections: [
       {
         title: "Pathology lab",
@@ -268,7 +268,7 @@ export const departmentsData = [
     icon: Pill, 
     title: "Pharmacy", 
     desc: "24/7 pharmacy and medical store on premises",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/General%20Medicine.jpg",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/General%20Medicine.jpg",
     sections: [
       {
         title: "Pharmacy",
@@ -306,7 +306,7 @@ export const departmentsData = [
     icon: DoorOpen, 
     title: "Rooms", 
     desc: "VIP Suite, Triple, Twin, Deluxe, Classic Suites",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/VIP%20ROOMS.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/VIP%20ROOMS.png",
     sections: [
       {
         title: "ROOMS – VIP suite, triple, twin, Deluxe, Classic suites",
@@ -340,7 +340,7 @@ export const departmentsData = [
     icon: ShieldAlert, 
     title: "Oncology", 
     desc: "Cancer care + Chemotherapy department",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Oncology%20Department.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Oncology%20Department.png",
     sections: [
       {
         title: "Oncology department (Includes Chemotherapy)",
@@ -378,7 +378,7 @@ export const departmentsData = [
     icon: Droplets, 
     title: "Dialysis Unit", 
     desc: "Fully equipped dialysis centre",
-    image: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Departments/Dialysis%20unit.png",
+    image: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Departments/Dialysis%20unit.png",
     sections: [
       {
         title: "Dialysis unit",

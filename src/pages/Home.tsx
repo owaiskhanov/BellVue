@@ -12,16 +12,16 @@ export default function Home({ setActiveTab }: HomeProps) {
   const [selectedAchievementIndex, setSelectedAchievementIndex] = useState<number | null>(null);
 
   const achievementImages = [
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/Caner%20%20MOC.jpg", alt: "Achievement 1" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/dr%20Lulla%20dad.jpeg", alt: "Achievement 2" },
-    { src: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Achievements/miday%2023.jpg", alt: "Achievement 3" }
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/Caner%20%20MOC.jpg", alt: "Achievement 1" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/dr%20Lulla%20dad.jpeg", alt: "Achievement 2" },
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/miday%2023.jpg", alt: "Achievement 3" }
   ];
 
   const hospitalSchema = {
     "@context": "https://schema.org",
     "@type": "Hospital",
     "name": "Belle Vue Multi Speciality Hospital",
-    "image": "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue-Logo-Favicon-full.png",
+    "image": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png",
     "url": "https://bellevuehospital.com",
     "telephone": "+91-022-6686-8600",
     "email": "bvmsph@gmail.com",
@@ -242,7 +242,7 @@ export default function Home({ setActiveTab }: HomeProps) {
               <div className="mt-8 p-4 md:p-6 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
                 <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden shrink-0 border-2 border-primary">
                   <img 
-                    src="https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/VijayNLulla-2.jpg" 
+                    src="https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/VijayNLulla-2.jpg" 
                     alt="Dr. Vijay N. Lulla" 
                     width={80}
                     height={80}
@@ -335,10 +335,10 @@ export default function Home({ setActiveTab }: HomeProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: "Dr. Sanjay Rajdev", spec: "Cardiologist", img: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/Dr-Sanjay-Rajdev.png" },
-              { name: "Dr. Haresh Mehta", spec: "Interventional Cardiologist", img: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/Dr-Haresh-Mehta.jpg" },
-              { name: "Dr. Asadullah Baig", spec: "Orthopedic Surgeon", img: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/Dr-Asadullah-Baig.jpg" },
-              { name: "Dr. Jessy Thomas", spec: "Diabetic Foot Surgeon", img: "https://zpojmqmlenivqxqcsuwc.supabase.co/storage/v1/object/public/Stalite%20Media/Bellvue%20Remake/Doctors/Dr-Jessy-Thomas.jpg" }
+              { name: "Dr. Sanjay Rajdev", spec: "Cardiologist", img: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Sanjay-Rajdev.png" },
+              { name: "Dr. Haresh Mehta", spec: "Interventional Cardiologist", img: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Haresh-Mehta.jpg" },
+              { name: "Dr. Asadullah Baig", spec: "Orthopedic Surgeon", img: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Asadullah-Baig.jpg" },
+              { name: "Dr. Jessy Thomas", spec: "Diabetic Foot Surgeon", img: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Jessy-Thomas.jpg" }
             ].map((doc, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border border-gray-100">
                 <div className="w-24 h-24 mx-auto bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-inner overflow-hidden border-2 border-primary/20">

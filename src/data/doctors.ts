@@ -2,10 +2,11 @@ export interface Doctor {
   name: string;
   speciality: string;
   type: 'Panel' | 'Visiting';
+  image?: string;
 }
 
 export const doctors: Doctor[] = [
-  { name: 'Dr. V.N. Lulla', speciality: 'Physician & Clinical Cardiologist', type: 'Panel' },
+  { name: 'Dr. V.N. Lulla', speciality: 'Physician & Clinical Cardiologist', type: 'Panel', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/VijayNLulla-2.jpg' },
   { name: 'Dr. Shrirang Sanglikar', speciality: 'Physician & Clinical Cardiologist', type: 'Panel' },
   { name: 'Dr. Abhishek Bhargav', speciality: 'Physician & Clinical Cardiologist', type: 'Visiting' },
   { name: 'Dr. Asif Bhojani', speciality: 'Physician & Clinical Cardiologist', type: 'Visiting' },
@@ -21,14 +22,15 @@ export const doctors: Doctor[] = [
   { name: 'Dr. Amit Kumar Shah', speciality: 'Physician & Clinical Cardiologist', type: 'Visiting' },
   { name: 'Dr. Aabid Khan', speciality: 'Physician & Clinical Cardiologist', type: 'Visiting' },
   
-  { name: 'Dr. Kiran Narang', speciality: 'Interventional Cardiologist', type: 'Visiting' },
-  { name: 'Dr. Haresh Mehta', speciality: 'Interventional Cardiologist', type: 'Visiting' },
+  { name: 'Dr. Kiran Narang', speciality: 'Interventional Cardiologist', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Kiran-Narang.jpg' },
+  { name: 'Dr. Haresh Mehta', speciality: 'Interventional Cardiologist', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Haresh-Mehta.jpg' },
   { name: 'Dr. Siddharth Seth', speciality: 'Interventional Cardiologist', type: 'Visiting' },
-  { name: 'Dr. Harish Bajaj', speciality: 'Interventional Cardiologist', type: 'Visiting' },
+  { name: 'Dr. Harish Bajaj', speciality: 'Interventional Cardiologist', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Harish-Bajaj.jpg' },
   { name: 'Dr. Ashish Amladi', speciality: 'Interventional Cardiologist', type: 'Visiting' },
   { name: 'Dr. Vivek Mehan', speciality: 'Interventional Cardiologist', type: 'Visiting' },
   { name: 'Dr. Anand Rao', speciality: 'Interventional Cardiologist', type: 'Visiting' },
   { name: 'Dr. Sanjay Ravat', speciality: 'Interventional Cardiologist', type: 'Visiting' },
+  { name: 'Dr. Sanjay Rajdev', speciality: 'Interventional Cardiologist', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Sanjay-Rajdev.png' },
   
   { name: 'Dr. Ujjay Jadhav', speciality: 'Anaesthetist', type: 'Visiting' },
   { name: 'Dr. Arun Devrajan', speciality: 'Anaesthetist', type: 'Visiting' },
@@ -65,7 +67,7 @@ export const doctors: Doctor[] = [
   
   { name: 'Dr. Shilpa Verma', speciality: 'Dietician', type: 'Panel' },
   
-  { name: 'Dr. Jessy Thomas', speciality: 'Diabetic Foot Surgeon', type: 'Visiting' },
+  { name: 'Dr. Jessy Thomas', speciality: 'Diabetic Foot Surgeon', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Jessy-Thomas.jpg' },
   
   { name: 'Dr. Srushti Bhujbale', speciality: 'Ayurveda Anorectal Surgeon', type: 'Panel' },
   
@@ -176,7 +178,7 @@ export const doctors: Doctor[] = [
   { name: 'Dr. N.M. Danani', speciality: 'Orthopedic Surgeon', type: 'Panel' },
   { name: 'Dr. Snehanshu Kumar', speciality: 'Orthopedic Surgeon', type: 'Panel' },
   { name: 'Dr. Pradeep Nayak', speciality: 'Orthopedic Surgeon', type: 'Panel' },
-  { name: 'Dr. A.I. Baig', speciality: 'Orthopedic Surgeon', type: 'Visiting' },
+  { name: 'Dr. A.I. Baig', speciality: 'Orthopedic Surgeon', type: 'Visiting', image: 'https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Doctors/Dr-Asadullah-Baig.jpg' },
   { name: 'Dr. Atul Pangate', speciality: 'Orthopedic Surgeon', type: 'Visiting' },
   { name: 'Dr. Atul Wankhede', speciality: 'Orthopedic Surgeon', type: 'Visiting' },
   { name: 'Dr. Siddhant Naik', speciality: 'Orthopedic Surgeon', type: 'Visiting' },
