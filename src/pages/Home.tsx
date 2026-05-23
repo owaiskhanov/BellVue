@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HeartPulse, Activity, Stethoscope, Users, Clock, Bed, ShieldCheck, Award, ThumbsUp, Heart, Brain, Bone, Pill, Ban, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
 import ImageSliderModal from '../components/ImageSliderModal';
+import { achievementsData } from '../data/achievementsData';
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
@@ -10,12 +11,11 @@ interface HomeProps {
 
 export default function Home({ setActiveTab }: HomeProps) {
   const [selectedAchievementIndex, setSelectedAchievementIndex] = useState<number | null>(null);
+  const [achievementImages, setAchievementImages] = useState(achievementsData.slice(0, 3));
 
-  const achievementImages = [
-    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/Caner%20%20MOC.jpg", alt: "Achievement 1" },
-    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/dr%20Lulla%20dad.jpeg", alt: "Achievement 2" },
-    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/miday%2023.jpg", alt: "Achievement 3" }
-  ];
+  useEffect(() => {
+    setAchievementImages([...achievementsData].sort(() => 0.5 - Math.random()).slice(0, 3));
+  }, []);
 
   const hospitalSchema = {
     "@context": "https://schema.org",
