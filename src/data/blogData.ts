@@ -13,6 +13,31 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "happy-doctors-day-2026",
+    title: "Happy Doctors' Day: Honoring Our Healthcare Heroes",
+    excerpt: "On this 1st of July, we celebrate National Doctors' Day, recognizing the tireless dedication, compassion, and expertise of our medical professionals at Belle Vue and across the globe.",
+    content: `Every year on July 1st, India celebrates National Doctors' Day to honor the legendary physician and the second Chief Minister of West Bengal, Dr. Bidhan Chandra Roy. It is a day to acknowledge the invaluable contributions of doctors to individual lives and communities.
+
+## The Pillars of Our Health
+Doctors are often the unsung heroes who work long hours, make critical decisions under pressure, and constantly update their knowledge to provide the best care. At Belle Vue Multispecialty Hospital, our doctors embody these qualities every single day. 
+
+Their commitment goes beyond just treating illnesses; it's about healing, offering hope, and improving the quality of life for every patient who walks through our doors.
+
+## A Year of Dedication
+The past few years have been particularly challenging for healthcare professionals globally. From navigating unprecedented health crises to managing the daily demands of a busy hospital, our doctors have shown remarkable resilience and unwavering dedication.
+
+## How You Can Celebrate
+- **Say Thank You:** A simple word of gratitude can make a doctor's day. If you have an appointment, take a moment to thank them.
+- **Stay Healthy:** The best gift you can give a doctor is taking care of your own health. Follow preventive care guidelines and maintain a healthy lifestyle.
+- **Share Your Story:** If a doctor has positively impacted your life, share your story. Positive feedback is incredibly motivating.
+
+On behalf of the entire Belle Vue Multispecialty Hospital team, we wish all our doctors a very Happy Doctors' Day! Your compassion and expertise make a world of difference.`,
+    author: "Belle Vue Administration",
+    date: "July 1, 2026",
+    category: "Hospital News",
+    imageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     id: "no-tobacco-day",
     title: "World No Tobacco Day: Clearing the Air for a Healthier Future",
     excerpt: "Every May 31st, the world observes World No Tobacco Day to highlight the health risks of tobacco use and advocate for effective policies to reduce consumption.",

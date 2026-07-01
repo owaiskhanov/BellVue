@@ -27,6 +27,11 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
+      {/* Announcement Banner */}
+      <div className="bg-primary text-white text-center py-1.5 px-4 text-sm font-medium">
+        🎉 Happy National Doctors' Day (1st July)! Honoring the dedication and compassion of our healthcare heroes.
+      </div>
+      
       {/* Top Info Bar */}
       <div className="hidden lg:flex justify-between items-center px-6 py-2 bg-gray-50 text-sm text-gray-600 border-b border-gray-200">
         <div className="flex items-center space-x-6">
