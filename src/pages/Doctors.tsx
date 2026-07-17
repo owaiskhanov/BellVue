@@ -10,8 +10,17 @@ export default function Doctors() {
   const categories = ['All', ...Array.from(new Set(doctors.map(d => d.speciality)))].sort();
 
   const filteredDoctors = useMemo(() => {
-    if (activeFilter === 'All') return doctors;
-    return doctors.filter(d => d.speciality === activeFilter);
+    let result = doctors;
+    if (activeFilter !== 'All') {
+      result = doctors.filter(d => d.speciality === activeFilter);
+    }
+    
+    // Sort Panel doctors first
+    return [...result].sort((a, b) => {
+      if (a.type === 'Panel' && b.type === 'Visiting') return -1;
+      if (a.type === 'Visiting' && b.type === 'Panel') return 1;
+      return 0;
+    });
   }, [activeFilter]);
 
   const doctorsSchema = {

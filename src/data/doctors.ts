@@ -71,6 +71,8 @@ export const doctors: Doctor[] = [
   
   { name: 'Dr. Srushti Bhujbale', speciality: 'Ayurveda Anorectal Surgeon', type: 'Panel' },
   
+  { name: 'Dr. Pallavi Chaturvedi', speciality: 'Homeopathy', type: 'Panel' },
+  
   { name: 'Dr. Amarnath Upadhye', speciality: 'General & Laparoscopic Surgeon', type: 'Panel' },
   { name: 'Dr. Rajinder Singh', speciality: 'General & Laparoscopic Surgeon', type: 'Visiting' },
   { name: 'Dr. Saalim Shaikh', speciality: 'General & Laparoscopic Surgeon', type: 'Visiting' },
@@ -173,6 +175,7 @@ export const doctors: Doctor[] = [
   { name: 'Dr. Anurag Bhate', speciality: 'Gynaecologist', type: 'Visiting' },
   { name: 'Dr. Neha Shah', speciality: 'Gynaecologist', type: 'Visiting' },
   { name: 'Dr. Hemlata Hardasani', speciality: 'Gynaecologist', type: 'Visiting' },
+  { name: 'Dr. Sayli W Gundavda', speciality: 'Gynaecologist', type: 'Panel' },
   
   { name: 'Dr. Niraj Vora', speciality: 'Orthopedic Surgeon', type: 'Panel' },
   { name: 'Dr. N.M. Danani', speciality: 'Orthopedic Surgeon', type: 'Panel' },
