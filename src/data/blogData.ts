@@ -13,6 +13,88 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "world-hepatitis-day-2026",
+    title: "World Hepatitis Day: Acting to Eliminate Hepatitis",
+    excerpt: "Join us this World Hepatitis Day as we raise awareness about viral hepatitis, its impact, and the steps we must take towards prevention, testing, and treatment.",
+    content: `World Hepatitis Day, observed on July 28th, aims to raise global awareness of viral hepatitis—an inflammation of the liver that can cause severe liver disease and hepatocellular cancer. It's a day to encourage action, engagement, and understanding to eliminate this public health threat.
+
+## The Silent Epidemic
+Viral hepatitis is often referred to as a "silent epidemic" because many people who are infected do not experience symptoms until the disease has progressed significantly. There are five main strains of the hepatitis virus: A, B, C, D, and E. While they all cause liver disease, they differ in modes of transmission, severity, and prevention methods.
+
+## Prevention and Protection
+Preventing hepatitis involves a combination of vaccination, safe practices, and awareness:
+
+- **Vaccination:** Vaccines are available and highly effective in preventing Hepatitis A and Hepatitis B. Getting vaccinated is the best defense.
+- **Safe Practices:** Hepatitis B, C, and D are transmitted through contact with infected blood or body fluids. Avoid sharing needles, razors, or toothbrushes, and ensure safe medical and sexual practices.
+- **Hygiene and Sanitation:** Hepatitis A and E are typically transmitted through contaminated food or water. Practicing good hygiene, such as frequent handwashing, and ensuring access to safe drinking water are crucial.
+
+## The Importance of Testing
+Because hepatitis can remain asymptomatic for years, testing is vital. Early detection allows for timely treatment, which can prevent serious liver damage, cirrhosis, and liver cancer. If you believe you may be at risk or have never been tested, consult your healthcare provider.
+
+## Treatment and Care
+Significant advancements have been made in the treatment of hepatitis, particularly Hepatitis C, which can now be cured in the majority of cases with antiviral medications. Effective treatments are also available to manage Hepatitis B, keeping the virus in check and preventing liver complications.
+
+Belle Vue Multispecialty Hospital is committed to providing comprehensive screening, diagnosis, and treatment for all forms of liver disease. This World Hepatitis Day, take the step to know your status and protect your liver health.`,
+    author: "Belle Vue Hepatology Team",
+    date: "July 28, 2026",
+    category: "Hepatology",
+    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "world-brain-day-2026",
+    title: "World Brain Day: Prioritizing Neurological Health",
+    excerpt: "On World Brain Day, we emphasize the importance of brain health, raising awareness about neurological disorders, and promoting preventive measures to keep your mind sharp.",
+    content: `Observed every year on July 22nd, World Brain Day serves as a crucial reminder of the importance of brain health and the need to prevent neurological disorders. The brain is the most complex organ in the body, acting as the control center for everything we do.
+
+## Understanding Neurological Disorders
+Neurological disorders, ranging from migraines and stroke to Alzheimer's and Parkinson's disease, affect millions of people worldwide. These conditions can significantly impact a person's quality of life, making early detection and proper management essential.
+
+## Promoting Brain Health
+Maintaining a healthy brain requires a holistic approach, incorporating both physical and mental well-being:
+
+- **Stay Physically Active:** Regular exercise increases blood flow to the brain, promoting the growth of new brain cells and improving cognitive function.
+- **Eat a Balanced Diet:** A diet rich in omega-3 fatty acids, antioxidants, and vitamins supports brain health. Foods like walnuts, berries, and leafy greens are particularly beneficial.
+- **Keep Your Mind Active:** Engage in activities that challenge your brain, such as reading, solving puzzles, learning a new language, or playing a musical instrument.
+- **Prioritize Sleep:** Quality sleep is vital for memory consolidation and clearing toxins from the brain. Aim for 7-9 hours of restful sleep each night.
+- **Manage Stress:** Chronic stress can take a toll on your brain. Practice relaxation techniques such as meditation, yoga, or deep breathing exercises.
+
+## Early Intervention is Key
+If you or a loved one experience symptoms such as persistent headaches, memory loss, numbness, or difficulty speaking, it is crucial to seek medical attention promptly. Early diagnosis and intervention can greatly improve outcomes for many neurological conditions.
+
+At Belle Vue Multispecialty Hospital, our neurology department is equipped with advanced diagnostic tools and a team of experts dedicated to providing comprehensive care for all brain-related health concerns.`,
+    author: "Belle Vue Neurology Department",
+    date: "July 22, 2026",
+    category: "Neurology",
+    imageUrl: "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "advantages-of-being-vegetarian",
+    title: "The Advantages of Being Vegetarian: A Path to Better Health",
+    excerpt: "Discover the numerous health benefits of adopting a vegetarian lifestyle, from improved heart health to better weight management and a reduced risk of chronic diseases.",
+    content: `Adopting a vegetarian diet is not just a culinary choice; it's a lifestyle decision with profound impacts on your health and well-being. A well-planned vegetarian diet, rich in fruits, vegetables, whole grains, and legumes, offers a multitude of benefits.
+
+## Improved Heart Health
+One of the most significant benefits of a vegetarian diet is its positive impact on cardiovascular health. Plant-based diets are typically lower in saturated fats and cholesterol, which helps reduce the risk of heart disease. The high fiber content in plant foods also aids in lowering blood pressure and improving overall heart function.
+
+## Weight Management
+Vegetarian diets are naturally lower in calories and higher in fiber compared to meat-heavy diets. This combination makes it easier to maintain a healthy weight and can assist in weight loss efforts. The focus on nutrient-dense foods keeps you feeling full and satisfied without overconsuming calories.
+
+## Reduced Risk of Chronic Diseases
+Studies have shown that vegetarians often have a lower risk of developing chronic diseases such as type 2 diabetes, certain types of cancer, and hypertension. The abundance of antioxidants, vitamins, and minerals in plant-based foods supports a strong immune system and reduces inflammation.
+
+## Better Digestive Health
+A diet rich in dietary fiber from fruits, vegetables, and whole grains promotes a healthy digestive system. It helps prevent constipation, maintains bowel health, and fosters a beneficial gut microbiome, which is crucial for overall health and immunity.
+
+## Environmental and Ethical Benefits
+Beyond personal health, choosing a vegetarian lifestyle also has environmental benefits, such as reducing your carbon footprint and conserving water resources. Many people also choose vegetarianism for ethical reasons, promoting animal welfare.
+
+If you are considering a transition to a vegetarian diet, it is important to plan your meals carefully to ensure you get all necessary nutrients, such as Vitamin B12, iron, and omega-3 fatty acids. Consulting with a nutritionist or dietitian can help you make a smooth and healthy transition.`,
+    author: "Belle Vue Nutrition Team",
+    date: "July 18, 2026",
+    category: "Nutrition",
+    imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     id: "happy-doctors-day-2026",
     title: "Happy Doctors' Day: Honoring Our Healthcare Heroes",
     excerpt: "On this 1st of July, we celebrate National Doctors' Day, recognizing the tireless dedication, compassion, and expertise of our medical professionals at Belle Vue and across the globe.",
