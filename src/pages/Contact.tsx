@@ -35,11 +35,34 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Bellevue Mumbai",
+    "url": "https://bellevuemumbai.in/contact",
+    "description": "Contact information for Bellevue Mumbai. Book an appointment or reach out for emergency services.",
+    "mainEntity": {
+      "@type": "MedicalClinic",
+      "name": "Bellevue Mumbai",
+      "telephone": "+91-022-6686-8600",
+      "email": "bvmsph@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, Andheri West",
+        "addressLocality": "Mumbai",
+        "postalCode": "400053",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
-        title="Contact Us" 
-        description="Get in touch with Belle Vue Multi Speciality Hospital for appointments, inquiries, or emergency services. Available 24/7."
+        title="Contact Bellevue Mumbai | Hospital in Andheri West" 
+        description="Get in touch with Bellevue Mumbai for appointments, inquiries, or emergency services. We are located in Andheri West and available 24/7."
+        url="https://bellevuemumbai.in/contact"
+        schema={contactSchema}
       />
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">

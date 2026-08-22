@@ -25,10 +25,11 @@ export default function Services() {
 
   const servicesSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "name": "Belle Vue Multi Speciality Hospital Services",
+    "@type": "MedicalClinic",
+    "name": "Bellevue Mumbai | Multispeciality Hospital Services",
+    "url": "https://bellevuemumbai.in/services",
     "availableService": services.map(s => ({
-      "@type": "MedicalTest",
+      "@type": "MedicalSpecialty",
       "name": s.title,
       "description": s.desc
     }))
@@ -37,8 +38,9 @@ export default function Services() {
   return (
     <div className="w-full bg-white min-h-screen py-16">
       <SEO 
-        title="Services" 
-        description="Comprehensive medical and support services provided by Belle Vue Multi Speciality Hospital."
+        title="Hospital Services & Facilities | Bellevue Mumbai" 
+        description="Explore the comprehensive medical services and state-of-the-art facilities at Bellevue Mumbai, a leading multispecialty hospital in Andheri West."
+        url="https://bellevuemumbai.in/services"
         schema={servicesSchema}
       />
       <div className="container mx-auto px-6">

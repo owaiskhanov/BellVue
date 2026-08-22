@@ -12,8 +12,9 @@ export default function Achievements() {
   return (
     <div className="w-full bg-gray-50 min-h-screen pb-24">
       <SEO 
-        title="Achievements" 
-        description="Explore the milestones, awards, and recognitions of Belle Vue Multi Speciality Hospital."
+        title="Awards & Achievements | Bellevue Mumbai" 
+        description="Explore the milestones, awards, and recognitions earned by Bellevue Mumbai for excellence in healthcare and community service."
+        url="https://bellevuemumbai.in/achievements"
       />
       
       {/* Header */}

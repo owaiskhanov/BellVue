@@ -24,8 +24,9 @@ export default function Gallery() {
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
-        title="Gallery" 
-        description="Take a visual tour of Belle Vue Multi Speciality Hospital's facilities, infrastructure, and patient care environments."
+        title="Hospital Gallery | Bellevue Mumbai" 
+        description="Take a visual tour of Bellevue Mumbai's modern facilities, advanced infrastructure, and comfortable patient care environments in Andheri West."
+        url="https://bellevuemumbai.in/gallery"
       />
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">

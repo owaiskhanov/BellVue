@@ -20,9 +20,9 @@ export default function Home({ setActiveTab }: HomeProps) {
   const hospitalSchema = {
     "@context": "https://schema.org",
     "@type": "Hospital",
-    "name": "Belle Vue Multi Speciality Hospital",
+    "name": "Bellevue Mumbai",
     "image": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png",
-    "url": "https://bellevuehospital.com",
+    "url": "https://bellevuemumbai.in",
     "telephone": "+91-022-6686-8600",
     "email": "bvmsph@gmail.com",
     "address": {
@@ -43,8 +43,8 @@ export default function Home({ setActiveTab }: HomeProps) {
   return (
     <div className="w-full">
       <SEO 
-        title="Home" 
-        description="Belle Vue Multi Speciality Hospital in Mumbai. Providing compassionate care and advanced medical facilities since 1983."
+        title="Bellevue Mumbai | Top Multispeciality Hospital in Andheri West" 
+        description="Bellevue Mumbai is a premier multispecialty hospital in Andheri West. Providing premium, compassionate, and affordable healthcare since 1983."
         schema={hospitalSchema}
       />
       {/* Hero Section */}

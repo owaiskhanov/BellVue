@@ -27,11 +27,40 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
     }
   }, [selectedPostId]);
 
+  const blogSchema = selectedPost ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": selectedPost.title,
+    "description": selectedPost.excerpt,
+    "image": selectedPost.imageUrl,
+    "author": {
+      "@type": "Person",
+      "name": selectedPost.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bellevue Mumbai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue-Logo-Favicon-full.png"
+      }
+    },
+    "datePublished": new Date(selectedPost.date).toISOString()
+  } : {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Bellevue Mumbai Health Blog",
+    "url": "https://bellevuemumbai.in/blog",
+    "description": "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Mumbai."
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen pb-20">
       <SEO 
-        title={selectedPost ? `${selectedPost.title} | Belle Vue Hospital` : "Blog & Health Articles | Belle Vue Multispecialty Hospital"}
-        description={selectedPost ? selectedPost.excerpt : "Read our latest articles on health, wellness, and medical advancements from the experts at Belle Vue Multispecialty Hospital."}
+        title={selectedPost ? `${selectedPost.title} | Bellevue Mumbai Blog` : "Blog & Health Articles | Bellevue Mumbai"}
+        description={selectedPost ? selectedPost.excerpt : "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Mumbai."}
+        url={selectedPost ? `https://bellevuemumbai.in/blog#${selectedPost.id}` : "https://bellevuemumbai.in/blog"}
+        schema={blogSchema}
       />
 
       <AnimatePresence mode="wait">
