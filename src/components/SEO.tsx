@@ -9,7 +9,7 @@ interface SEOProps {
   schema?: Record<string, any>;
 }
 
-export default function SEO({ title, description, type = 'website', url, schema }: SEOProps) {
+export default function SEO({ title, description, type = 'website', url = 'https://bellevuemumbai.in', schema }: SEOProps) {
   const siteName = "Bellevue Mumbai";
   const fullTitle = title.includes("Bellevue Mumbai") ? title : `${title} | ${siteName} | Multispeciality Hospital`;
 
@@ -17,6 +17,7 @@ export default function SEO({ title, description, type = 'website', url, schema 
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="canonical" href={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />

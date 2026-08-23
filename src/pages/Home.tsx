@@ -32,6 +32,11 @@ export default function Home({ setActiveTab }: HomeProps) {
       "postalCode": "400053",
       "addressCountry": "IN"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.1257",
+      "longitude": "72.8318"
+    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

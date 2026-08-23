@@ -52,6 +52,11 @@ export default function Contact() {
         "addressLocality": "Mumbai",
         "postalCode": "400053",
         "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.1257",
+        "longitude": "72.8318"
       }
     }
   };

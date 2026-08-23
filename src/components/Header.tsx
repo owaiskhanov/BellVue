@@ -200,6 +200,8 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
           <button 
             className="lg:hidden p-2 text-gray-600 hover:text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

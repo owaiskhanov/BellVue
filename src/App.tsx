@@ -17,12 +17,33 @@ import Achievements from './pages/Achievements';
 import Blog from './pages/Blog';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('HOME');
+  const [activeTab, setActiveTab] = useState(() => {
+    const path = window.location.pathname.replace('/', '').toUpperCase();
+    const validTabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
+    if (path === 'DEPARTMENTS') return 'DEPARTMENT'; // Handle plural alias
+    return validTabs.includes(path) ? path : 'HOME';
+  });
 
-  // Scroll to top when tab changes
+  // Update URL and scroll when tab changes
   useEffect(() => {
+    const path = activeTab === 'HOME' ? '/' : `/${activeTab.toLowerCase().replace('department', 'departments')}`;
+    if (window.location.pathname !== path) {
+      window.history.pushState(null, '', path);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [activeTab]);
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname.replace('/', '').toUpperCase();
+      const validTabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
+      if (path === 'DEPARTMENTS') setActiveTab('DEPARTMENT');
+      else setActiveTab(validTabs.includes(path) ? path : 'HOME');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const renderPage = () => {
     switch (activeTab) {
