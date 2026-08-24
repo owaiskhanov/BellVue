@@ -26,8 +26,8 @@ export default function Doctors() {
   const doctorsSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Bellevue Mumbai | Expert Doctors",
-    "url": "https://bellevuemumbai.in/doctors",
+    "name": "Bellevue Multispeciality Hospital | Expert Doctors",
+    "url": "http://bellevuemumbai.in/doctors",
     "medicalSpecialty": categories.filter(c => c !== 'All').map(c => ({
       "@type": "MedicalSpecialty",
       "name": c
@@ -37,9 +37,9 @@ export default function Doctors() {
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
-        title="Best Doctors at Bellevue Mumbai | Top Specialists" 
-        description="Meet our expert team of over 100 experienced doctors and specialists across all medical departments at Bellevue Mumbai."
-        url="https://bellevuemumbai.in/doctors"
+        title="Best Doctors at Bellevue Multispeciality Hospital | Top Specialists" 
+        description="Meet our expert team of over 100 experienced doctors and specialists across all medical departments at Bellevue Multispeciality Hospital."
+        url="http://bellevuemumbai.in/doctors"
         schema={doctorsSchema}
       />
       <div className="container mx-auto px-6">

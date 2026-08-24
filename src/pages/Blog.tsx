@@ -39,7 +39,7 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Bellevue Mumbai",
+      "name": "Bellevue Multispeciality Hospital",
       "logo": {
         "@type": "ImageObject",
         "url": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue-Logo-Favicon-full.png"
@@ -49,17 +49,17 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
   } : {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Bellevue Mumbai Health Blog",
-    "url": "https://bellevuemumbai.in/blog",
-    "description": "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Mumbai."
+    "name": "Bellevue Multispeciality Hospital Health Blog",
+    "url": "http://bellevuemumbai.in/blog",
+    "description": "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Multispeciality Hospital."
   };
 
   return (
     <div className="bg-gray-50 min-h-screen pb-20">
       <SEO 
-        title={selectedPost ? `${selectedPost.title} | Bellevue Mumbai Blog` : "Blog & Health Articles | Bellevue Mumbai"}
-        description={selectedPost ? selectedPost.excerpt : "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Mumbai."}
-        url={selectedPost ? `https://bellevuemumbai.in/blog#${selectedPost.id}` : "https://bellevuemumbai.in/blog"}
+        title={selectedPost ? `${selectedPost.title} | Bellevue Multispeciality Hospital Blog` : "Blog & Health Articles | Bellevue Multispeciality Hospital"}
+        description={selectedPost ? selectedPost.excerpt : "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Multispeciality Hospital."}
+        url={selectedPost ? `http://bellevuemumbai.in/blog#${selectedPost.id}` : "http://bellevuemumbai.in/blog"}
         schema={blogSchema}
       />
 

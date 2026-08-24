@@ -43,8 +43,8 @@ export default function Departments() {
   const departmentsSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Bellevue Mumbai | Departments",
-    "url": "https://bellevuemumbai.in/departments",
+    "name": "Bellevue Multispeciality Hospital | Departments",
+    "url": "http://bellevuemumbai.in/departments",
     "department": departmentsData.map(d => ({
       "@type": "MedicalClinic",
       "name": d.title,
@@ -55,9 +55,9 @@ export default function Departments() {
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
-        title="Medical Departments & Specialties | Bellevue Mumbai" 
-        description="Discover the specialized medical departments at Bellevue Mumbai. From Cardiology to Orthopedics, we provide expert care in Andheri West."
-        url="https://bellevuemumbai.in/departments"
+        title="Medical Departments & Specialties | Bellevue Multispeciality Hospital" 
+        description="Discover the specialized medical departments at Bellevue Multispeciality Hospital. From Cardiology to Orthopedics, we provide expert care in Andheri West."
+        url="http://bellevuemumbai.in/departments"
         schema={departmentsSchema}
       />
       <div className="container mx-auto px-6">

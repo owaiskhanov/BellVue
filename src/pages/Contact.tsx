@@ -38,18 +38,19 @@ export default function Contact() {
   const contactSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Bellevue Mumbai",
-    "url": "https://bellevuemumbai.in/contact",
-    "description": "Contact information for Bellevue Mumbai. Book an appointment or reach out for emergency services.",
+    "name": "Contact Bellevue Multispeciality Hospital",
+    "url": "http://bellevuemumbai.in/contact",
+    "description": "Contact information for Bellevue Multispeciality Hospital. Book an appointment or reach out for emergency services.",
     "mainEntity": {
       "@type": "MedicalClinic",
-      "name": "Bellevue Mumbai",
+      "name": "Bellevue Multispeciality Hospital",
       "telephone": "+91-022-6686-8600",
       "email": "bvmsph@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, Andheri West",
+        "streetAddress": "The Link, 1st floor, Opp. D.N. Nagar Metro Station gate no 3, Next to Audi Showroom, New Link Rd, opp. Star Bazaar Extension, Andheri West",
         "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
         "postalCode": "400053",
         "addressCountry": "IN"
       },
@@ -57,6 +58,11 @@ export default function Contact() {
         "@type": "GeoCoordinates",
         "latitude": "19.1257",
         "longitude": "72.8318"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "3.4",
+        "reviewCount": "216"
       }
     }
   };
@@ -64,9 +70,9 @@ export default function Contact() {
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
-        title="Contact Bellevue Mumbai | Hospital in Andheri West" 
-        description="Get in touch with Bellevue Mumbai for appointments, inquiries, or emergency services. We are located in Andheri West and available 24/7."
-        url="https://bellevuemumbai.in/contact"
+        title="Contact Bellevue Multispeciality Hospital | Hospital in Andheri West" 
+        description="Get in touch with Bellevue Multispeciality Hospital for appointments, inquiries, or emergency services. We are located in Andheri West and available 24/7."
+        url="http://bellevuemumbai.in/contact"
         schema={contactSchema}
       />
       <div className="container mx-auto px-6">

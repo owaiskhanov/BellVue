@@ -20,15 +20,16 @@ export default function Home({ setActiveTab }: HomeProps) {
   const hospitalSchema = {
     "@context": "https://schema.org",
     "@type": "Hospital",
-    "name": "Bellevue Mumbai",
+    "name": "Bellevue Multispeciality Hospital",
     "image": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png",
-    "url": "https://bellevuemumbai.in",
+    "url": "http://bellevuemumbai.in/",
     "telephone": "+91-022-6686-8600",
     "email": "bvmsph@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, Andheri West",
+      "streetAddress": "The Link, 1st floor, Opp. D.N. Nagar Metro Station gate no 3, Next to Audi Showroom, New Link Rd, opp. Star Bazaar Extension, Andheri West",
       "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
       "postalCode": "400053",
       "addressCountry": "IN"
     },
@@ -36,6 +37,11 @@ export default function Home({ setActiveTab }: HomeProps) {
       "@type": "GeoCoordinates",
       "latitude": "19.1257",
       "longitude": "72.8318"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "3.4",
+      "reviewCount": "216"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -48,8 +54,8 @@ export default function Home({ setActiveTab }: HomeProps) {
   return (
     <div className="w-full">
       <SEO 
-        title="Bellevue Mumbai | Top Multispeciality Hospital in Andheri West" 
-        description="Bellevue Mumbai is a premier multispecialty hospital in Andheri West. Providing premium, compassionate, and affordable healthcare since 1983."
+        title="Bellevue Multispeciality Hospital | Top Multispeciality Hospital in Andheri West" 
+        description="Bellevue Multispeciality Hospital is a premier multispecialty hospital in Andheri West. Providing premium, compassionate, and affordable healthcare since 1983."
         schema={hospitalSchema}
       />
       {/* Hero Section */}
