@@ -38,6 +38,14 @@ export default function Home({ setActiveTab }: HomeProps) {
       "latitude": "19.1257",
       "longitude": "72.8318"
     },
+    "areaServed": [
+      { "@type": "City", "name": "Mumbai" },
+      { "@type": "Place", "name": "Andheri West" },
+      { "@type": "Place", "name": "Lokhandwala" },
+      { "@type": "Place", "name": "Versova" },
+      { "@type": "Place", "name": "Oshiwara" },
+      { "@type": "Place", "name": "Juhu" }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "3.4",
@@ -265,6 +273,72 @@ export default function Home({ setActiveTab }: HomeProps) {
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">Dr. Vijay N. Lulla</h4>
                   <p className="text-primary font-medium">Medical Director & Clinical Cardiologist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Local SEO & AISO Section: Hospital Near Me */}
+      <motion.section initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} viewport={{once:true}} transition={{duration:0.6}} className="py-20 bg-gray-50 border-t border-gray-200">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Looking for a "Hospital Near Me" in Andheri West?</h2>
+            <p className="text-lg text-gray-600">
+              If you are searching for the closest and best hospital near you in Andheri West, Lokhandwala, or Versova, Bellevue Multispeciality Hospital is your most accessible healthcare destination.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-2xl font-bold text-primary mb-4 flex items-center">
+                <HeartPulse className="w-6 h-6 mr-2" />
+                Why Choose Us for Local Care?
+              </h3>
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                    <ShieldCheck className="w-4 h-4 text-green-600" />
+                  </div>
+                  <div>
+                    <strong className="text-gray-900">Prime Location:</strong> Situated opposite D.N. Nagar Metro Station (Gate 3), making us easily reachable and helping you avoid heavy traffic.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                    <ShieldCheck className="w-4 h-4 text-green-600" />
+                  </div>
+                  <div>
+                    <strong className="text-gray-900">24/7 Availability:</strong> Round-the-clock emergency, trauma, and pharmacy services located right in your neighborhood.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                    <ShieldCheck className="w-4 h-4 text-green-600" />
+                  </div>
+                  <div>
+                    <strong className="text-gray-900">Comprehensive Care:</strong> Multispeciality departments all under one roof, saving you travel time between clinics.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-2xl font-bold text-primary mb-4 flex items-center">
+                <Brain className="w-6 h-6 mr-2" />
+                Frequently Asked Questions
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">What is the closest hospital to D.N. Nagar Metro?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Bellevue Multispeciality Hospital is located immediately opposite Gate No. 3 of the D.N. Nagar Metro Station on New Link Road, making it the most accessible hospital in the vicinity.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Do you serve Lokhandwala and Versova patients?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Yes, our central location on the New Link Road makes us the primary emergency and multispeciality care provider for residents of Lokhandwala, Versova, and Oshiwara.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Are you open for emergencies 24/7?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Absolutely. Our emergency department, ICU, and pharmacy operate 24 hours a day, 7 days a week for all local residents.</p>
                 </div>
               </div>
             </div>

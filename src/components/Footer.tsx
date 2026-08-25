@@ -52,7 +52,10 @@ export default function Footer({ setActiveTab }: FooterProps) {
           <ul className="space-y-4">
             <li className="flex items-start space-x-3">
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-              <span className="text-sm text-gray-400">The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, Andheri West, Mumbai – 400053</span>
+              <div className="text-sm text-gray-400">
+                <p className="mb-2">The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, Andheri West, Mumbai – 400053</p>
+                <p className="text-xs text-gray-500 font-medium"><span className="text-gray-400">Serving Areas:</span> Andheri West, Lokhandwala Complex, Versova, Oshiwara, Juhu</p>
+              </div>
             </li>
             <li className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-primary shrink-0" />

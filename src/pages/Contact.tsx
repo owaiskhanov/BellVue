@@ -59,6 +59,14 @@ export default function Contact() {
         "latitude": "19.1257",
         "longitude": "72.8318"
       },
+      "areaServed": [
+        { "@type": "City", "name": "Mumbai" },
+        { "@type": "Place", "name": "Andheri West" },
+        { "@type": "Place", "name": "Lokhandwala" },
+        { "@type": "Place", "name": "Versova" },
+        { "@type": "Place", "name": "Oshiwara" },
+        { "@type": "Place", "name": "Juhu" }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "3.4",
