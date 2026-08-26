@@ -21,6 +21,7 @@ export default function Home({ setActiveTab }: HomeProps) {
     "@context": "https://schema.org",
     "@type": "Hospital",
     "name": "Bellevue Multispeciality Hospital",
+    "alternateName": "Bellevue Mumbai",
     "image": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png",
     "url": "http://bellevuemumbai.in/",
     "telephone": "+91-022-6686-8600",

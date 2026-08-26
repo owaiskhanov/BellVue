@@ -10,8 +10,8 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, type = 'website', url = 'http://bellevuemumbai.in/', schema }: SEOProps) {
-  const siteName = "Bellevue Multispeciality Hospital";
-  const fullTitle = title.includes("Bellevue Multispeciality Hospital") ? title : `${title} | ${siteName}`;
+  const siteName = "Bellevue Multispeciality Hospital | Bellevue Mumbai";
+  const fullTitle = title.includes("Bellevue") ? title : `${title} | ${siteName}`;
 
   return (
     <Helmet>
