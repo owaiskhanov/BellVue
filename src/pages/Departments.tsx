@@ -43,7 +43,8 @@ export default function Departments() {
   const departmentsSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Bellevue Multispeciality Hospital | Departments",
+    "name": "Bellevue Multispeciality Hospital",
+    "alternateName": "Bellevue Mumbai",
     "url": "http://bellevuemumbai.in/departments",
     "department": departmentsData.map(d => ({
       "@type": "MedicalClinic",

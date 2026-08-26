@@ -26,7 +26,8 @@ export default function Services() {
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Bellevue Multispeciality Hospital | Multispeciality Hospital Services",
+    "name": "Bellevue Multispeciality Hospital",
+    "alternateName": "Bellevue Mumbai",
     "url": "http://bellevuemumbai.in/services",
     "availableService": services.map(s => ({
       "@type": "MedicalSpecialty",

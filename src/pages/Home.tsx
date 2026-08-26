@@ -57,7 +57,45 @@ export default function Home({ setActiveTab }: HomeProps) {
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
-    }
+    },
+    "availableService": [
+      { "@type": "MedicalTest", "name": "24/7 Emergency & Trauma" },
+      { "@type": "MedicalTest", "name": "Cardiology" },
+      { "@type": "MedicalTest", "name": "Orthopedics" },
+      { "@type": "MedicalTest", "name": "Neurology" },
+      { "@type": "MedicalTest", "name": "General Surgery" }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the closest hospital to D.N. Nagar Metro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bellevue Multispeciality Hospital is located immediately opposite Gate No. 3 of the D.N. Nagar Metro Station on New Link Road, making it the most accessible hospital in the vicinity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you serve Lokhandwala and Versova patients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our central location on the New Link Road makes us the primary emergency and multispeciality care provider for residents of Lokhandwala, Versova, and Oshiwara."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you open for emergencies 24/7?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Our emergency department, ICU, and pharmacy operate 24 hours a day, 7 days a week for all local residents."
+        }
+      }
+    ]
   };
 
   return (
@@ -65,7 +103,7 @@ export default function Home({ setActiveTab }: HomeProps) {
       <SEO 
         title="Bellevue Multispeciality Hospital | Top Multispeciality Hospital in Andheri West" 
         description="Bellevue Multispeciality Hospital is a premier multispecialty hospital in Andheri West. Providing premium, compassionate, and affordable healthcare since 1983."
-        schema={hospitalSchema}
+        schema={[hospitalSchema, faqSchema]}
       />
       {/* Hero Section */}
       <motion.section initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} className="w-full bg-black relative group cursor-pointer border-b-4 border-primary">

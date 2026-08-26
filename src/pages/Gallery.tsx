@@ -21,12 +21,26 @@ export default function Gallery() {
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2012.png", label: "Gallery Image 12" }
   ];
 
+  const gallerySchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Bellevue Multispeciality Hospital Gallery",
+    "description": "Visual tour of Bellevue Multispeciality Hospital's modern facilities, advanced infrastructure, and comfortable patient care environments.",
+    "url": "http://bellevuemumbai.in/gallery",
+    "image": images.map(img => ({
+      "@type": "ImageObject",
+      "url": img.src,
+      "caption": img.label
+    }))
+  };
+
   return (
     <div className="w-full bg-gray-50 min-h-screen py-16">
       <SEO 
         title="Hospital Gallery | Bellevue Multispeciality Hospital" 
         description="Take a visual tour of Bellevue Multispeciality Hospital's modern facilities, advanced infrastructure, and comfortable patient care environments in Andheri West."
         url="http://bellevuemumbai.in/gallery"
+        schema={gallerySchema}
       />
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">

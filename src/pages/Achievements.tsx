@@ -9,12 +9,27 @@ export default function Achievements() {
 
   const achievements = achievementsData;
 
+  const achievementsSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Awards & Achievements | Bellevue Multispeciality Hospital",
+    "description": "Milestones, awards, and recognitions earned by Bellevue Multispeciality Hospital for excellence in healthcare.",
+    "url": "http://bellevuemumbai.in/achievements",
+    "mainEntity": {
+      "@type": "MedicalOrganization",
+      "name": "Bellevue Multispeciality Hospital",
+      "alternateName": "Bellevue Mumbai",
+      "award": achievements.map(a => a.alt)
+    }
+  };
+
   return (
     <div className="w-full bg-gray-50 min-h-screen pb-24">
       <SEO 
         title="Awards & Achievements | Bellevue Multispeciality Hospital" 
         description="Explore the milestones, awards, and recognitions earned by Bellevue Multispeciality Hospital for excellence in healthcare and community service."
         url="http://bellevuemumbai.in/achievements"
+        schema={achievementsSchema}
       />
       
       {/* Header */}

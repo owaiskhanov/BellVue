@@ -26,11 +26,20 @@ export default function Doctors() {
   const doctorsSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    "name": "Bellevue Multispeciality Hospital | Expert Doctors",
+    "name": "Bellevue Multispeciality Hospital",
+    "alternateName": "Bellevue Mumbai",
     "url": "http://bellevuemumbai.in/doctors",
     "medicalSpecialty": categories.filter(c => c !== 'All').map(c => ({
       "@type": "MedicalSpecialty",
       "name": c
+    })),
+    "employee": doctors.map(doc => ({
+      "@type": "Physician",
+      "name": doc.name,
+      "medicalSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": doc.speciality
+      }
     }))
   };
 

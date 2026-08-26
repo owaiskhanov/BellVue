@@ -40,6 +40,7 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
     "publisher": {
       "@type": "Organization",
       "name": "Bellevue Multispeciality Hospital",
+      "alternateName": "Bellevue Mumbai",
       "logo": {
         "@type": "ImageObject",
         "url": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue-Logo-Favicon-full.png"
@@ -50,6 +51,7 @@ export default function Blog({ setActiveTab }: { setActiveTab: (tab: string) => 
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Bellevue Multispeciality Hospital Health Blog",
+    "alternateName": "Bellevue Mumbai Health Blog",
     "url": "http://bellevuemumbai.in/blog",
     "description": "Read our latest articles on health, wellness, and medical advancements from the experts at Bellevue Multispeciality Hospital."
   };

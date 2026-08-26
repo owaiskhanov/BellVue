@@ -6,7 +6,7 @@ interface SEOProps {
   description: string;
   type?: string;
   url?: string;
-  schema?: Record<string, any>;
+  schema?: Record<string, any> | Record<string, any>[];
 }
 
 export default function SEO({ title, description, type = 'website', url = 'http://bellevuemumbai.in/', schema }: SEOProps) {
