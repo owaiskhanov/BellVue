@@ -9,7 +9,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
   const tabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
+    <footer className="bg-gray-900 text-gray-300 pt-12 pb-0">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Brand */}
         <div className="space-y-4">
@@ -98,19 +98,20 @@ export default function Footer({ setActiveTab }: FooterProps) {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mt-6 pt-6 border-t border-gray-800/60 text-center text-sm text-gray-500 flex flex-col items-center space-y-2">
+      <div className="container mx-auto px-6 mt-6 pt-6 pb-6 border-t border-gray-800/60 text-center text-sm text-gray-500">
         <p>© 2026 Belle Vue Multispecialty Hospital. All Rights Reserved.</p>
-        <p>
-          Designed and managed by{' '}
-          <a 
-            href="https://stalite.in/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-primary hover:text-white transition-colors font-medium"
-          >
-            Stalite Media
-          </a>
-        </p>
+      </div>
+
+      <div id="stalite-media-watermark" className="border-t border-white/[0.04] bg-black/50 py-3 px-6 text-center">
+        <a
+          href="https://www.stalite.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-[10.5px] tracking-[0.18em] uppercase text-white/20 hover:text-white/45 transition-colors group"
+        >
+          <span>Managed by</span>
+          <span className="text-white/30 group-hover:text-red-500 transition-colors font-medium">Stalite Media</span>
+        </a>
       </div>
     </footer>
   );
