@@ -44,7 +44,17 @@ export default function Contact() {
     "mainEntity": {
       "@type": "MedicalClinic",
       "name": "Bellevue Multispeciality Hospital",
-      "alternateName": "Bellevue Mumbai",
+      "alternateName": [
+        "Bellevue Mumbai",
+        "Bellevue Hospital Mumbai",
+        "Bellevue Hospital DN Nagar",
+        "Bellevue Hospital",
+        "Belle Vue",
+        "Belle Vue Hospital",
+        "Belle Vue Multispeciality Hospital",
+        "Belle Vue Andheri West",
+        "Bellevue Nursing Home"
+      ],
       "telephone": "+91-022-6686-8600",
       "email": "bvmsph@gmail.com",
       "address": {

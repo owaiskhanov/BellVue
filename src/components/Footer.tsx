@@ -69,7 +69,36 @@ export default function Footer({ setActiveTab }: FooterProps) {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500 flex flex-col items-center space-y-2">
+      {/* Local SEO & Keyword Tags */}
+      <div className="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800">
+        <p className="text-xs font-semibold text-gray-400 mb-3 tracking-wider uppercase">Popular Searches & Healthcare Landmarks:</p>
+        <div className="flex flex-wrap gap-2 text-xs text-gray-400">
+          {[
+            { label: "Bellevue Hospital DN Nagar", tab: "BLOG" },
+            { label: "Bellevue Hospital Mumbai", tab: "BLOG" },
+            { label: "Bellevue Multispeciality Hospital", tab: "HOME" },
+            { label: "Bellevue Hospital", tab: "SERVICES" },
+            { label: "Belle Vue Multispeciality Hospital", tab: "DEPARTMENT" },
+            { label: "Belle Vue", tab: "ABOUT" },
+            { label: "Belle Vue Hospital", tab: "CONTACT" },
+            { label: "Belle Vue Andheri West", tab: "HOME" },
+            { label: "Bellevue Nursing Home", tab: "BLOG" },
+          ].map((item, idx) => (
+            <button
+              key={idx}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setActiveTab(item.tab === 'ABOUT' ? 'HOME' : item.tab);
+              }}
+              className="bg-gray-800/80 hover:bg-gray-800 hover:text-white px-2.5 py-1 rounded-md transition-colors border border-gray-700/50"
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 mt-6 pt-6 border-t border-gray-800/60 text-center text-sm text-gray-500 flex flex-col items-center space-y-2">
         <p>© 2026 Belle Vue Multispecialty Hospital. All Rights Reserved.</p>
         <p>
           Designed and managed by{' '}

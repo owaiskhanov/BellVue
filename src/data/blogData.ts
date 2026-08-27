@@ -13,6 +13,353 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "bellevue-hospital-dn-nagar-emergency-multispeciality",
+    title: "Bellevue Hospital DN Nagar: Fastest Emergency & Multispeciality Care Opposite Gate 3",
+    excerpt: "Located directly opposite Gate No. 3 of D.N. Nagar Metro Station, Bellevue Hospital DN Nagar provides rapid 24/7 emergency response, intensive care, and multispeciality consultations without traffic delays.",
+    content: `When a medical crisis occurs, immediate access is everything. For residents and commuters in Andheri West, **Bellevue Hospital DN Nagar** stands as the most strategically located and easily accessible medical institution in the western suburbs.
+
+Situated on the 1st floor of The Link building, directly opposite **D.N. Nagar Metro Station (Gate No. 3)** and next to the Audi Showroom on New Link Road, Bellevue Hospital offers an unparalleled logistical advantage that saves vital minutes during emergencies.
+
+## Why Location Matters: The Bellevue Hospital DN Nagar Advantage
+Navigating Mumbai traffic on New Link Road, S.V. Road, or the Western Express Highway can result in critical delays during a health emergency. Bellevue Hospital DN Nagar solves this challenge with seamless transit connectivity:
+
+- **Direct Metro Connectivity:** Positioned at the intersection of Mumbai Metro Line 1 (Versova-Andheri-Ghatkopar) and Metro Line 2A (Dahisar-DN Nagar), patients can arrive directly at D.N. Nagar Metro Gate 3 and reach our emergency doors in less than 60 seconds.
+- **Fast Access for Western Suburbs:** Residents from Lokhandwala Complex, Versova, Oshiwara, Juhu, and Four Bungalows can reach us within 5 to 10 minutes, bypassing the congested bottlenecks of inner arterial lanes.
+
+## 24/7 Emergency & Critical Care Infrastructure
+Bellevue Hospital DN Nagar operates a round-the-clock Emergency & Trauma Unit managed by emergency physicians, certified nurses, and on-call cardiologists and surgeons.
+
+### Key Emergency Services:
+1. **Cardiac Emergency Protocol:** Immediate ECG, bedside cardiac biomarkers, and rapid stabilization for acute coronary syndromes and heart attacks.
+2. **Trauma & Accident Care:** Rapid triage bay equipped to manage severe orthopedic fractures, head injuries, and lacerations.
+3. **Advanced Intensive Care Unit (ICU):** State-of-the-art multi-parameter monitors, invasive ventilators, and central oxygen lines with 1:1 dedicated nursing.
+4. **24/7 Diagnostic Lab & Radiology:** Immediate in-house blood pathology, digital X-rays, ultrasound, and cardiac diagnostics ensuring swift treatment decisions.
+
+## Multispeciality Consultations & Surgeries Under One Roof
+Beyond emergency care, Bellevue Hospital DN Nagar provides comprehensive outpatient (OPD) and inpatient (IPD) clinical care across major specialties:
+- **Cardiology & Heart Care:** Led by experienced clinical cardiologists.
+- **Orthopedics & Joint Replacement:** Minimally invasive joint surgery, arthroscopy, and trauma management.
+- **General & Laparoscopic Surgery:** Gallbladder removal, hernia repair, appendectomy, and gastrointestinal procedures.
+- **Internal Medicine & Diabetology:** Comprehensive chronic disease management for hypertension, diabetes, and infectious fevers.
+- **Nephrology & Urology:** Kidney stone management and renal care.
+
+## Contact Bellevue Hospital DN Nagar
+Whether you need an urgent medical consultation, a routine health screening, or emergency hospitalization, **Bellevue Hospital DN Nagar** is ready to serve you 24 hours a day, 365 days a year.
+
+- **Address:** The Link, 1st Floor, Opp. D.N. Nagar Metro Station Gate No. 3, Next to Audi Showroom, New Link Road, Andheri West, Mumbai – 400053
+- **Emergency Helpline:** +91-022-6686-8600
+- **Email:** bvmsph@gmail.com`,
+    author: "Bellevue Emergency Care Team",
+    date: "August 26, 2026",
+    category: "Local Health",
+    imageUrl: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "bellevue-hospital-mumbai-trusted-healthcare-legacy",
+    title: "Bellevue Hospital Mumbai: Four Decades of Clinical Excellence & Trusted Care",
+    excerpt: "Discover why Bellevue Hospital Mumbai has been the benchmark for compassionate multispeciality healthcare, advanced surgery, and cardiac care across Mumbai since 1983.",
+    content: `For over four decades, **Bellevue Hospital Mumbai** has stood as a pillar of compassionate, ethical, and high-quality medical care in the city of Mumbai. Established in 1983, the institution has continuously evolved from its historic origins into a modern, fully-equipped multispeciality hospital dedicated to healing patients from all walks of life.
+
+Located in the heart of Andheri West, Bellevue Hospital Mumbai blends traditional family doctor warmth with cutting-edge medical advancements, making it one of the most trusted community hospitals in the metropolitan region.
+
+## Four Decades of Healthcare Excellence in Mumbai
+Founded on the principles of patient-first medicine, transparent pricing, and clinical integrity, Bellevue Hospital Mumbai has cared for multiple generations of Mumbai families.
+
+### Core Pillars of Bellevue Hospital Mumbai:
+- **Ethical Medical Practice:** We believe in evidence-based treatments and only recommending procedures that are clinically necessary for patient recovery.
+- **Experienced Clinical Leadership:** Guided by seasoned senior medical director Dr. Vijay N. Lulla and a team of distinguished visiting consultants.
+- **Affordable & Accessible Care:** Offering premium private hospital amenities at transparent, reasonable healthcare costs with full cashless insurance (TPA) support.
+
+## Comprehensive Medical Departments
+Bellevue Hospital Mumbai is equipped with modern infrastructure across specialized medical domains:
+
+### 1. Cardiology & Cardiovascular Care
+Equipped with non-invasive cardiac diagnostics (ECG, 2D Echocardiography, Stress Tests) and emergency cardiac stabilization protocols for chest pain, heart failure, and arrhythmias.
+
+### 2. Orthopedics & Joint Surgery
+Specialized care for knee and hip osteoarthritis, sports injuries, fracture management, spinal disorders, and post-operative rehabilitation.
+
+### 3. General & Minimal Access Laparoscopy
+State-of-the-art modular operating theatres featuring laminar airflow for sterile, infection-free surgeries including laparoscopic cholecystectomy, hernia repairs, and appendectomies.
+
+### 4. Critical Care & Intensive Care Unit (ICU)
+A modern ICU equipped with high-end mechanical ventilators, invasive haemodynamic monitoring, and 24/7 dedicated intensivists.
+
+### 5. Preventive Health Checkups
+Comprehensive full-body health checkup packages customized for young professionals, senior citizens, diabetics, and cardiac patients across Mumbai.
+
+## Why Mumbai Families Choose Bellevue Hospital
+In a bustling metropolis like Mumbai, finding a hospital that combines state-of-the-art medical technology with empathetic bedside care can be challenging. Bellevue Hospital Mumbai bridges that gap by treating every patient like family.
+
+Experience trusted healthcare in Mumbai at Bellevue Hospital. Contact our team today to schedule your consultation or health checkup.`,
+    author: "Dr. Vijay N. Lulla & Editorial Team",
+    date: "August 25, 2026",
+    category: "Hospital News",
+    imageUrl: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "bellevue-multispeciality-hospital-comprehensive-care",
+    title: "The Bellevue Multispeciality Hospital Advantage: Comprehensive Family Healthcare",
+    excerpt: "From cardiology and orthopedics to general surgery and critical care, Bellevue Multispeciality Hospital delivers multi-disciplinary expertise and modern medical technology under one roof.",
+    content: `When dealing with complex medical conditions, having multiple medical specialties collaborating seamlessly under one roof is critical for accurate diagnosis and effective recovery. **Bellevue Multispeciality Hospital** in Andheri West provides a unified, multidisciplinary healthcare ecosystem designed to address every aspect of your family’s well-being.
+
+Whether you need a routine outpatient checkup, an elective laparoscopic surgery, or critical care support, Bellevue Multispeciality Hospital delivers clinical precision combined with compassionate care.
+
+## What Defines Bellevue Multispeciality Hospital?
+
+### 1. Multi-Disciplinary Doctor Collaboration
+At Bellevue Multispeciality Hospital, our specialists don’t work in silos. A patient with diabetic foot complications, for example, is treated collaboratively by our endocrinologist, vascular surgeon, and orthopedic team to achieve optimal healing.
+
+### 2. Advanced Operating Theatres (OT)
+Our surgical suites feature laminar airflow filtration, HEPA air purity systems, and modern laparoscopic towers, drastically reducing post-operative infection risks and speeding up discharge times.
+
+### 3. High-Dependency Critical Care
+Our Intensive Care Unit (ICU) and High Dependency Unit (HDU) are staffed 24/7 with trained critical care nurses, respiratory therapists, and anesthesiologists.
+
+### 4. 24/7 Emergency & In-House Diagnostics
+Round-the-clock emergency medical officers, an automated pathology laboratory, digital radiology (X-ray, Ultrasound), and a 24-hour pharmacy ensure that emergency treatments begin without delay.
+
+## Specialized Medical Departments:
+- **Cardiology:** Preventive cardiology, hypertension clinic, and cardiac rehabilitation.
+- **Orthopedic Surgery:** Arthroscopy, total knee replacement (TKR), trauma surgery.
+- **Gastroenterology & General Surgery:** Endoscopy, laparoscopic hernia, gallbladder, and colorectal surgery.
+- **Nephrology & Urology:** Renal stone treatment, prostate care, and urinary tract health.
+- **Pediatrics & Family Medicine:** Routine immunizations, childhood infections, and family wellness.
+- **Neurology & Stroke Management:** Rapid triage and rehabilitation for neurological disorders.
+
+## Cashless Mediclaim & Insurance Desk
+Bellevue Multispeciality Hospital is empaneled with all major Third-Party Administrators (TPAs) and private health insurance companies in India, ensuring hassle-free cashless hospitalization for insured patients.
+
+Choose **Bellevue Multispeciality Hospital** for world-class, integrated healthcare right in your neighborhood.`,
+    author: "Medical Advisory Board",
+    date: "August 24, 2026",
+    category: "General Medicine",
+    imageUrl: "https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "bellevue-hospital-patient-guide-services-facilities",
+    title: "Patient Guide to Bellevue Hospital: Services, Facilities & 24/7 Support",
+    excerpt: "Planning a consultation or admission? Here is your complete guide to OPD hours, diagnostic tests, cashless insurance, and patient amenities at Bellevue Hospital.",
+    content: `Visiting a hospital can feel overwhelming, whether it is for a routine doctor consultation, an elective surgical procedure, or an unexpected medical emergency. At **Bellevue Hospital**, our mission is to make every stage of your healthcare journey as smooth, transparent, and comfortable as possible.
+
+This patient guide outlines what to expect when visiting Bellevue Hospital in Andheri West, Mumbai.
+
+## 1. Outpatient Department (OPD) Consultations
+Bellevue Hospital hosts daily outpatient clinics with top medical specialists:
+- **How to Book:** Appointments can be booked via phone (+91-022-6686-8600) or directly at our reception desk.
+- **Doctor Specialties Available:** Cardiology, Orthopedics, General Medicine, Laparoscopic Surgery, Gynecology, ENT, Dermatology, and Nephrology.
+- **Digital Health Records:** We maintain organized digital medical records to ensure seamless follow-up visits.
+
+## 2. Inpatient Admissions & Room Categories
+For patients requiring hospitalization, Bellevue Hospital offers clean, comfortable, and well-appointed room categories:
+- **General Wards:** Spacious, air-conditioned, with continuous nursing supervision.
+- **Semi-Private & Twin Sharing Rooms:** Balanced privacy and affordability.
+- **Private Deluxe Rooms:** Dedicated patient suites with television, refrigerator, and comfortable attendant accommodations.
+- **ICU Beds:** Advanced critical care monitoring with 1:1 nurse-to-patient ratios.
+
+## 3. Cashless Insurance & TPA Desk
+Our dedicated insurance desk assists patients with hassle-free insurance pre-authorization and claims settlement:
+- Empaneled with leading public and private TPAs (Star Health, HDFC ERGO, ICICI Lombard, Care Health, Medi Assist, Paramount, and more).
+- Transparent billing with zero hidden costs.
+
+## 4. In-House Diagnostics & 24-Hour Pharmacy
+- **Pathology Laboratory:** Automated biochemistry, hematology, and serology testing with fast turnaround times.
+- **Radiology:** High-resolution digital X-rays and sonography.
+- **Pharmacy:** Fully stocked 24/7 in-house pharmacy providing authentic prescription medicines, surgical consumables, and supportive care items.
+
+## 5. Visitor Policies & Patient Comfort
+We understand the vital emotional role family members play in healing. Bellevue Hospital maintains structured visiting hours to balance patient rest with family support, alongside strict hygiene and sanitization protocols.
+
+Trust **Bellevue Hospital** for exceptional care, skilled doctors, and a warm, supportive healing environment.`,
+    author: "Bellevue Patient Relations",
+    date: "August 23, 2026",
+    category: "Patient Care",
+    imageUrl: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "belle-vue-multispeciality-hospital-advanced-surgical-critical-care",
+    title: "Belle Vue Multispeciality Hospital: Advanced Surgical Technology & Critical Care",
+    excerpt: "Equipped with state-of-the-art modular operating theatres and a dedicated ICU, Belle Vue Multispeciality Hospital leads in minimally invasive surgery, trauma care, and cardiology.",
+    content: `Modern medical science has revolutionized surgical precision, making procedures safer, less invasive, and significantly faster in recovery times. At **Belle Vue Multispeciality Hospital**, our state-of-the-art surgical suites and intensive care capabilities represent the highest standards of clinical technology in Mumbai.
+
+Located at New Link Road in Andheri West, Belle Vue Multispeciality Hospital delivers advanced surgical solutions across general surgery, orthopedics, urology, and trauma care.
+
+## Advanced Minimally Invasive & Laparoscopic Surgery
+Laparoscopic surgery—often called keyhole surgery—allows surgeons to operate through tiny incisions using high-definition cameras and precision instruments.
+
+### Key Surgical Procedures Performed at Belle Vue Multispeciality Hospital:
+- **Laparoscopic Cholecystectomy:** Rapid gallbladder removal with minimal scarring and 24-48 hour discharge.
+- **Laparoscopic Hernia Repair:** Inguinal and umbilical hernia repairs with advanced mesh reinforcement.
+- **Laparoscopic Appendectomy:** Safe, rapid intervention for acute appendicitis.
+- **Colorectal & Gastrointestinal Surgeries:** Treating gastrointestinal blockages, bleeding, and polyps.
+
+## Orthopedic & Joint Reconstruction Excellence
+Our orthopedic surgical wing at Belle Vue Multispeciality Hospital handles:
+- Total and Partial Knee Replacement (TKR/PKR)
+- Total Hip Replacement (THR)
+- Arthroscopic Ligament Repair (ACL/PCL tears)
+- Complex Fracture and Polytrauma Fixation
+
+## Sterile Modular Operating Theatres with Laminar Airflow
+Infection control is paramount in surgical success. Belle Vue Multispeciality Hospital utilizes modular operating rooms equipped with:
+- **Laminar Airflow Ventilation:** Continuous unidirectional positive pressure filtered air preventing airborne bacterial contamination.
+- **HEPA Filters:** 99.97% microscopic particle filtration.
+- **Advanced Anaesthesia Workstations:** Continuous multi-parameter monitoring for patient safety under general or regional anaesthesia.
+
+## 24/7 Intensive Care Support (ICU)
+Every major surgery is backed by our dedicated Intensive Care Unit, equipped with modern ventilators, invasive arterial monitoring, defibrillators, and 24/7 critical care physician supervision.
+
+For advanced surgical consultations and second opinions, consult the surgical team at **Belle Vue Multispeciality Hospital**.`,
+    author: "Surgical & Critical Care Division",
+    date: "August 22, 2026",
+    category: "Advanced Surgery",
+    imageUrl: "https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "belle-vue-four-decades-medical-compassion-mumbai",
+    title: "The Heritage of Belle Vue: 4 Decades of Medical Compassion and Patient Trust",
+    excerpt: "For generations of Mumbai families, the name Belle Vue stands for warm bedside care, clinical ethics, and unwavering healthcare commitment since its establishment in 1983.",
+    content: `In a fast-changing city like Mumbai, institutions that stand the test of time do so because of one core quality: unyielding trust. Since its establishment in 1983, the name **Belle Vue** has been synonymous with empathetic, reliable, and high-quality medical healing.
+
+Over the last four decades, Belle Vue has grown alongside the vibrant community of Andheri West, providing a haven of clinical care where patients are known by name, not just by hospital room numbers.
+
+## The Founding Philosophy of Belle Vue
+When Belle Vue was established in 1983, Mumbai's western suburbs were rapidly expanding, yet access to compassionate, personalized medical care remained limited. Belle Vue was founded to fill this essential need:
+
+1. **The Family Doctor Touch:** Replicating the warmth, attentiveness, and dedicated bedside manner of traditional family physicians.
+2. **Clinical Integrity:** Upholding strict medical ethics and transparent communication with patients and their families.
+3. **Continuous Modernization:** Investing in advanced diagnostic technology and modern surgical infrastructure to provide top-tier care locally.
+
+## Evolving Through Generations of Healing
+Generations of Mumbai families have trusted Belle Vue for life’s most pivotal health moments:
+- Welcoming new lives through maternity and neonatal care.
+- Managing chronic hypertension, heart health, and diabetes across decades.
+- Healing complex fractures, trauma injuries, and surgical ailments.
+- Providing dignified, compassionate care to elderly seniors in their golden years.
+
+## Modern Medical Excellence Grounded in Timeless Values
+Today, Belle Vue operates as a premier multispeciality medical center featuring modern ICUs, digital labs, and advanced surgical facilities opposite the D.N. Nagar Metro Station on New Link Road. Yet our core philosophy remains unchanged: every patient deserves compassionate, respectful, and clinically exceptional care.
+
+When you walk into **Belle Vue**, you enter a four-decade tradition of healing excellence.`,
+    author: "Bellevue Heritage & Archive Team",
+    date: "August 21, 2026",
+    category: "About Bellevue",
+    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "belle-vue-hospital-cashless-treatments-emergency-icu",
+    title: "Belle Vue Hospital: Cashless Insurance Hospitalization, Emergency ICU & Diagnostics",
+    excerpt: "Everything you need to know about hassle-free cashless hospitalization, 24/7 emergency admissions, and full-body health checkup packages at Belle Vue Hospital.",
+    content: `Navigating healthcare finances during a medical crisis should never add to a family’s stress. At **Belle Vue Hospital**, we have streamlined our administrative, insurance, and clinical admission protocols to ensure that patients can focus entirely on what matters most: getting better.
+
+From cashless insurance processing with all major TPAs to round-the-clock emergency ICU admissions, here is how Belle Vue Hospital ensures hassle-free medical care for Mumbai residents.
+
+## 1. Cashless Mediclaim & Insurance Empanelment
+Belle Vue Hospital is actively empaneled with India’s leading insurance providers and Third-Party Administrators (TPAs), including:
+- Star Health & Allied Insurance
+- HDFC ERGO General Insurance
+- ICICI Lombard
+- Care Health Insurance (Religare)
+- Medi Assist India TPA
+- Paramount Health Services
+- MDIndia Healthcare
+- Vidal Health & Heritage Health TPA
+
+### How Cashless Hospitalization Works at Belle Vue Hospital:
+1. **Planned Admissions:** Submit your insurance e-card and policy documents 48 hours before planned admission. Our desk will obtain pre-authorization approval swiftly.
+2. **Emergency Admissions:** Our TPA desk initiates emergency approval within 2 to 4 hours of patient stabilization.
+3. **Transparent Billing:** We provide clear, itemized bills with zero hidden fees.
+
+## 2. 24/7 Emergency & Critical Care ICU
+Emergencies don't follow schedules. Belle Vue Hospital's emergency department is ready at all hours:
+- Emergency resuscitation bays and defibrillators.
+- Cardiac monitoring and rapid clot-dissolving therapies for heart attacks.
+- Advanced ICU equipped with multi-channel monitors and ventilators.
+
+## 3. Comprehensive Diagnostic Pathology & Radiology
+Accurate treatment begins with accurate diagnostics. In-house facilities include:
+- Fully automated hematology, biochemistry, and hormone assays.
+- Digital X-rays with immediate radiologist review.
+- Color Doppler and 2D Echocardiography for cardiovascular evaluation.
+
+## 4. Preventive Health Checkup Packages
+Belle Vue Hospital offers curated preventive health checkup packages for individuals of all age groups, including Executive Health Checkups, Senior Citizen Profiles, and Comprehensive Cardiac Screening.
+
+For hassle-free healthcare, transparent insurance processing, and trusted medical experts, choose **Belle Vue Hospital** in Andheri West, Mumbai.`,
+    author: "Bellevue Hospital Administrative Desk",
+    date: "August 19, 2026",
+    category: "Healthcare Guide",
+    imageUrl: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "belle-vue-andheri-west-neighborhood-lifeline",
+    title: "Belle Vue Andheri West: Your Neighborhood Healthcare Lifeline for Lokhandwala & Versova",
+    excerpt: "Serving residents across Lokhandwala Complex, Versova, Oshiwara, and Juhu, Belle Vue Andheri West ensures quality doctors and emergency trauma care are just minutes from your doorstep.",
+    content: `When a health issue arises, having a high-caliber medical facility right in your immediate neighborhood provides unmatched peace of mind. For the thousands of residents living across Andheri West, **Belle Vue Andheri West** serves as the trusted community healthcare lifeline.
+
+Strategically situated at The Link on New Link Road—directly opposite D.N. Nagar Metro Station Gate 3 and close to Star Bazaar—Belle Vue Andheri West provides rapid medical access to neighboring communities.
+
+## Serving Key Catchment Areas Across Andheri West:
+- **Lokhandwala Complex:** Just a 5-minute drive via Lokhandwala Back Road or New Link Road.
+- **Versova & Seven Bungalows:** Easily accessible via JP Road and Versova Metro Station.
+- **Oshiwara & Millat Nagar:** Minutes away via the Link Road corridor.
+- **Four Bungalows & D.N. Nagar:** Walking distance from residential societies and metro exits.
+- **Juhu Scheme & JVPD:** Quick 10-minute transit via Gulmohar Road and Juhu Circle.
+
+## Why Belle Vue Andheri West is the First Choice for Local Residents:
+
+### 1. Rapid Emergency Response
+During a sudden heart attack, stroke, or severe injury, traveling across traffic-choked roads to distant hospitals in South Mumbai or Bandra is dangerous. Belle Vue Andheri West offers immediate emergency resuscitation and ICU stabilization within your neighborhood.
+
+### 2. Multispeciality OPD Clinics
+Residents can consult top medical specialists in Cardiology, Orthopedics, General Surgery, Gynecology, Pediatrics, and Diabetology close to home, avoiding long commutes.
+
+### 3. Elderly & Senior-Friendly Care
+Andheri West is home to many senior citizens whose children work abroad or in other parts of the city. Belle Vue Andheri West offers dedicated senior health screenings, compassionate nursing care, and accessible ground/first-floor medical access with elevators.
+
+### 4. Local Community Health Screening Programs
+We regularly host community blood donation drives, free cardiac camps, bone mineral density screenings, and diabetes awareness workshops for local housing societies.
+
+Make **Belle Vue Andheri West** your trusted family healthcare partner today.`,
+    author: "Community Health Outreach",
+    date: "August 18, 2026",
+    category: "Local Health",
+    imageUrl: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "bellevue-nursing-home-to-modern-multispeciality-center",
+    title: "From Bellevue Nursing Home to Modern Multispeciality Center: Our 40+ Year Journey",
+    excerpt: "Founded in 1983, the historic Bellevue Nursing Home set the benchmark for personalized patient care. Explore how our nursing heritage fuels today's advanced multispeciality hospital.",
+    content: `Longtime residents of Andheri West will fondly remember the name **Bellevue Nursing Home**. Established in 1983 by the Lulla family, Bellevue Nursing Home was created with a clear and compassionate vision: to provide personalized, warm, and top-quality bedside nursing care to a burgeoning Mumbai suburb.
+
+Over the past four decades, while our medical capabilities and infrastructure have expanded into a state-of-the-art multispeciality hospital, the foundational ethos of Bellevue Nursing Home—attentive bedside care and genuine doctor-patient relationships—remains the beating heart of our institution.
+
+## The Historic Bellevue Nursing Home Legacy
+In the 1980s and 1990s, Bellevue Nursing Home was widely celebrated across Andheri for:
+- **Dedicated Maternal & Child Healthcare:** Delivering thousands of healthy babies and supporting new mothers with attentive postpartum nursing.
+- **General Surgical & Recovery Care:** Offering personalized post-operative attention where nurses and doctors knew every patient by name.
+- **Family-Centric Healing:** Creating an environment where patients felt the comfort of home while receiving high-standard medical treatment.
+
+## Evolving into a High-Tech Multispeciality Hospital
+As medical science advanced and community healthcare needs diversified, Bellevue expanded its facilities into a comprehensive multispeciality hospital:
+- **Modern Laminar Flow Modular OTs:** Enabling complex laparoscopic surgeries, orthopedics, and joint replacements.
+- **Advanced Intensive Care Unit (ICU):** Providing invasive hemodynamic monitoring and ventilator support for critical patients.
+- **24/7 Emergency & Trauma Center:** Located right opposite D.N. Nagar Metro Station Gate 3 on New Link Road.
+- **Comprehensive Diagnostic Pathology & Radiology:** In-house computerized diagnostics for swift and accurate medical decisions.
+
+## What Has Never Changed: Our Nursing Soul
+While technology and equipment have upgraded to meet 21st-century standards, our commitment to dedicated nursing care remains unchanged:
+- **Compassionate Bedside Attention:** Nurses who prioritize patient comfort, dignity, and gentle care.
+- **Ethical, Transparent Medicine:** Clear explanations from senior doctors with zero hidden costs.
+- **Lifelong Community Bonds:** Continuing to care for multiple generations of the same families who first walked through the doors of Bellevue Nursing Home in 1983.
+
+Whether you know us as **Bellevue Nursing Home**, **Belle Vue**, or **Bellevue Multispeciality Hospital**, our promise remains the same: healing with compassion, expertise, and trust.`,
+    author: "Dr. Vijay N. Lulla",
+    date: "August 17, 2026",
+    category: "Hospital History",
+    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     id: "monsoon-health-hazards-andheri-west",
     title: "Navigating Monsoon Health Hazards in Andheri West: A Resident's Guide",
     excerpt: "As the Mumbai monsoons arrive, areas like Andheri West and Lokhandwala face unique health challenges. Learn how to protect your family from waterborne diseases and tackle seasonal fevers.",

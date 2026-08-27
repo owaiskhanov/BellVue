@@ -21,7 +21,17 @@ export default function Home({ setActiveTab }: HomeProps) {
     "@context": "https://schema.org",
     "@type": "Hospital",
     "name": "Bellevue Multispeciality Hospital",
-    "alternateName": "Bellevue Mumbai",
+    "alternateName": [
+      "Bellevue Mumbai",
+      "Bellevue Hospital Mumbai",
+      "Bellevue Hospital DN Nagar",
+      "Bellevue Hospital",
+      "Belle Vue",
+      "Belle Vue Hospital",
+      "Belle Vue Multispeciality Hospital",
+      "Belle Vue Andheri West",
+      "Bellevue Nursing Home"
+    ],
     "image": "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Bellvue%20Logo.png",
     "url": "http://bellevuemumbai.in/",
     "telephone": "+91-022-6686-8600",
@@ -73,26 +83,34 @@ export default function Home({ setActiveTab }: HomeProps) {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is the closest hospital to D.N. Nagar Metro?",
+        "name": "Where is Bellevue Hospital DN Nagar located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bellevue Multispeciality Hospital is located immediately opposite Gate No. 3 of the D.N. Nagar Metro Station on New Link Road, making it the most accessible hospital in the vicinity."
+          "text": "Bellevue Hospital DN Nagar (Belle Vue Andheri West) is located on the 1st floor of The Link, directly opposite Gate No. 3 of D.N. Nagar Metro Station, next to the Audi Showroom on New Link Road, Andheri West, Mumbai."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you serve Lokhandwala and Versova patients?",
+        "name": "Is Bellevue Hospital formerly known as Bellevue Nursing Home?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our central location on the New Link Road makes us the primary emergency and multispeciality care provider for residents of Lokhandwala, Versova, and Oshiwara."
+          "text": "Yes, established in 1983 as Bellevue Nursing Home (Belle Vue), our institution has evolved over four decades into the fully-equipped Bellevue Multispeciality Hospital while preserving our warm, personalized nursing care."
         }
       },
       {
         "@type": "Question",
-        "name": "Are you open for emergencies 24/7?",
+        "name": "What specialties are offered at Belle Vue Multispeciality Hospital?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. Our emergency department, ICU, and pharmacy operate 24 hours a day, 7 days a week for all local residents."
+          "text": "Belle Vue Multispeciality Hospital offers 24/7 Emergency & Trauma care, Clinical Cardiology, Orthopedic Surgery, Laparoscopic General Surgery, Critical Care ICU, Nephrology, and In-House Pathology Diagnostics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are emergency services available 24/7 at Bellevue Hospital Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Bellevue Hospital Mumbai provides 24/7 emergency resuscitation, cardiac monitoring, ICU facilities, and a round-the-clock in-house pharmacy."
         }
       }
     ]
@@ -368,16 +386,20 @@ export default function Home({ setActiveTab }: HomeProps) {
               </h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">What is the closest hospital to D.N. Nagar Metro?</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">Bellevue Multispeciality Hospital is located immediately opposite Gate No. 3 of the D.N. Nagar Metro Station on New Link Road, making it the most accessible hospital in the vicinity.</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Where is Bellevue Hospital DN Nagar located?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed"><strong>Bellevue Hospital DN Nagar</strong> is located on the 1st floor of The Link, directly opposite Gate No. 3 of D.N. Nagar Metro Station on New Link Road, Andheri West. It provides instant transit access across Metro Lines 1 & 2A.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Do you serve Lokhandwala and Versova patients?</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">Yes, our central location on the New Link Road makes us the primary emergency and multispeciality care provider for residents of Lokhandwala, Versova, and Oshiwara.</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Is Bellevue Hospital formerly known as Bellevue Nursing Home?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Yes! Founded in 1983 as <strong>Bellevue Nursing Home</strong> (also recognized locally as <strong>Belle Vue</strong>), our institution has served generations of families and has now expanded into the fully equipped <strong>Belle Vue Multispeciality Hospital</strong>.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Are you open for emergencies 24/7?</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">Absolutely. Our emergency department, ICU, and pharmacy operate 24 hours a day, 7 days a week for all local residents.</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Do you serve Belle Vue Andheri West and Lokhandwala residents?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Yes, <strong>Belle Vue Andheri West</strong> serves as the primary medical and emergency care hub for residents across Lokhandwala Complex, Versova, Oshiwara, Four Bungalows, and Juhu.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Are emergency services available 24/7 at Bellevue Hospital Mumbai?</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">Absolutely. <strong>Bellevue Hospital Mumbai</strong> operates a 24-hour emergency room, advanced ICU, trauma unit, and pharmacy 365 days a year.</p>
                 </div>
               </div>
             </div>
