@@ -1,4 +1,12 @@
 export const achievementsData = [
+  { 
+    src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/MIDDAY%20MULTISPECIALITY%20MIMBAI%202026.png", 
+    alt: "Midday Multispeciality Mumbai 2026 Award - Bellevue Multispeciality Hospital" 
+  },
+  { 
+    src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/MIDDAY%20SUBURBAN%202026.png", 
+    alt: "Midday Suburban 2026 Award - Bellevue Multispeciality Hospital" 
+  },
   { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/Caner%20%20MOC.jpg", alt: "Achievement 1" },
   { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/dr%20Lulla%20dad.jpeg", alt: "Achievement 2" },
   { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Achievements/Mid%20Day%20(1).jpg", alt: "Achievement 3" },
