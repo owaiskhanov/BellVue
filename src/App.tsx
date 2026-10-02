@@ -17,12 +17,15 @@ import Achievements from './pages/Achievements';
 import Blog from './pages/Blog';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState(() => {
-    const path = window.location.pathname.replace('/', '').toUpperCase();
+  const getTabFromPath = (): string => {
+    const segments = window.location.pathname.replace(/^\/+|\/+$/g, '').split('/');
+    const firstSegment = (segments[0] || '').toUpperCase();
     const validTabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
-    if (path === 'DEPARTMENTS') return 'DEPARTMENT'; // Handle plural alias
-    return validTabs.includes(path) ? path : 'HOME';
-  });
+    if (firstSegment === 'DEPARTMENTS') return 'DEPARTMENT';
+    return validTabs.includes(firstSegment) ? firstSegment : 'HOME';
+  };
+
+  const [activeTab, setActiveTab] = useState<string>(getTabFromPath);
 
   // Update URL and scroll when tab changes
   useEffect(() => {
@@ -36,10 +39,7 @@ export default function App() {
   // Handle browser back/forward buttons
   useEffect(() => {
     const handlePopState = () => {
-      const path = window.location.pathname.replace('/', '').toUpperCase();
-      const validTabs = ['HOME', 'DOCTORS', 'DEPARTMENT', 'SERVICES', 'GALLERY', 'ACHIEVEMENTS', 'BLOG', 'CONTACT'];
-      if (path === 'DEPARTMENTS') setActiveTab('DEPARTMENT');
-      else setActiveTab(validTabs.includes(path) ? path : 'HOME');
+      setActiveTab(getTabFromPath());
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
