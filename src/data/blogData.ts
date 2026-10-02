@@ -13,6 +13,200 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "breast-cancer-awareness-month-prevention-screening-support",
+    title: "Breast Cancer Awareness Month: Prevention, Early Screening & Compassionate Support",
+    excerpt: "All of October is dedicated globally to educating communities about breast cancer prevention, early screening, and multi-disciplinary medical support. Learn the critical steps to protect your health.",
+    content: `October is recognized worldwide as **Breast Cancer Awareness Month** (often called *Pink October*). This annual global health campaign is dedicated to increasing awareness, promoting early detection through screening, educating communities about risk reduction, and offering compassionate support to individuals and families impacted by breast cancer.
+
+At **Bellevue Multispeciality Hospital in Mumbai**, we believe that education and timely clinical evaluation are the most powerful tools in saving lives.
+
+---
+
+## Why Breast Cancer Awareness Matters More Than Ever
+
+Breast cancer has emerged as the most commonly diagnosed cancer among women globally and across urban India. According to epidemiological data, Indian women often present with breast cancer at a younger median age (in their late 30s and 40s) compared to Western populations, and frequently at later stages due to social stigma, lack of awareness, or fear of diagnosis.
+
+**The most crucial fact to remember:** When detected early in Stage 1 or localized Stage 2, the 5-year survival rate for breast cancer is greater than **90%**. Routine screening and prompt medical attention can turn a life-threatening crisis into a fully treatable condition.
+
+---
+
+## The Three Pillars of Early Detection
+
+Early detection means identifying abnormal cell proliferation or tumors before they grow large enough to be felt or spread to lymph nodes.
+
+### 1. Monthly Breast Self-Examination (BSE)
+Every woman aged 20 and above should conduct a self-examination once a month (ideally 3 to 5 days after her menstrual cycle ends when breast tissue is least tender).
+* **Look:** Stand before a mirror with hands on hips and inspect for visual changes, including asymmetries, dimpling, puckering of the skin, or inversion of the nipple.
+* **Feel:** Using the flat pads of your three middle fingers, press in small circular motions across the entire breast and armpit area (both standing and lying down) to feel for lumps or thickening.
+* **Check for Secretions:** Gently squeeze the nipple to inspect for unexpected watery, milky, or bloody discharge.
+
+### 2. Clinical Breast Examination (CBE)
+A clinical breast exam should be performed by a qualified physician or gynecologist:
+* Every 1 to 3 years for women between ages 20 and 39.
+* Annually for all women aged 40 and older.
+
+### 3. Screening Mammography & Breast Ultrasound
+* **Ages 40 and Above:** Annual or biennial digital mammograms are the gold standard for screening, able to detect microcalcifications and microscopic lesions up to 2 years before they can be physically felt.
+* **High-Risk Individuals:** Women with a strong family history (first-degree relatives with breast or ovarian cancer) or known BRCA1/BRCA2 genetic mutations should consult with an oncologist to begin screening as early as age 25 to 30, often complemented by breast MRI and high-resolution ultrasound.
+
+---
+
+## Key Warning Signs You Should Never Ignore
+
+While most breast lumps are benign (such as non-cancerous fibroadenomas or fluid-filled cysts), **any new change must be evaluated by a medical specialist**. Schedule a consultation immediately if you notice:
+
+1. A painless, firm lump or thickening in the breast or underarm.
+2. Changes in breast shape, contour, or unexplained enlargement of one breast.
+3. Dimpling, redness, or skin texture resembling an orange peel (*peau d'orange*).
+4. Newly inverted or retracted nipples.
+5. Spontaneous nipple discharge, especially if blood-stained or clear-amber.
+6. Persistent localized pain or scaling/crusting of the nipple areola.
+
+---
+
+## Actionable Steps for Prevention & Risk Reduction
+
+While genetics, age, and biological factors cannot be modified, lifestyle adjustments can significantly reduce lifetime risk:
+
+* **Maintain a Healthy Body Weight:** Post-menopausal obesity increases circulating estrogen levels, elevating breast cancer risk.
+* **Stay Physically Active:** Engaging in at least 150 minutes of moderate aerobic exercise (such as brisk walking or swimming) weekly lowers hormonal risk factors.
+* **Nutritious, Antioxidant-Rich Diet:** Prioritize leafy greens, cruciferous vegetables, legumes, whole grains, and healthy fats while limiting ultra-processed and charred foods.
+* **Minimize Alcohol & Avoid Tobacco:** Alcohol consumption is directly linked to an increased risk of hormone receptor-positive breast cancers.
+* **Be Mindful of Hormone Replacement Therapy (HRT):** Discuss the risks and benefits of prolonged estrogen-progestin therapy with your physician.
+
+---
+
+## Support, Empathy & Holistic Care
+
+Breast cancer awareness is not just about medical tests—it is about emotional and community support. A cancer diagnosis impacts mental well-being, self-image, family dynamics, and financial planning. 
+
+Encouraging mothers, sisters, daughters, partners, and friends to schedule their checkups eliminates the barrier of hesitation. No woman should feel alone on her healthcare journey.
+
+---
+
+## Comprehensive Care at Bellevue Multispeciality Hospital Mumbai
+
+Located centrally in Andheri West (Opposite D.N. Nagar Metro Station Gate No. 3), **Bellevue Multispeciality Hospital** provides integrated women’s health services:
+
+* **Expert Clinical Consultations:** Compassionate evaluations by experienced gynecologists, general surgeons, and surgical oncology consultants.
+* **Diagnostic Imaging & Pathology:** Quick-turnaround digital imaging, ultrasound, and dedicated histopathology.
+* **Personalized Health Checkup Packages:** Tailored women's wellness screenings that include comprehensive blood panels, clinical examinations, and preventive diagnostics.
+* **Patient-Centric Guidance:** Supportive, empathetic care designed to guide you through every stage of assessment, diagnosis, and treatment.
+
+**This October, take charge of your breast health.** Do not wait for symptoms to appear—book a preventive screening or clinical breast examination with our medical team today.`,
+    author: "Oncology & Women's Health Team",
+    date: "October 1, 2026",
+    category: "Oncology",
+    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: "adhd-awareness-month-understanding-symptoms-support",
+    title: "ADHD Awareness Month: Recognizing Symptoms, Breaking Myths & Practical Support Across All Ages",
+    excerpt: "October is globally recognized as ADHD Awareness Month. Discover what attention deficit hyperactivity disorder really is, how it manifests in children and adults, and effective strategies for neurological and behavioral support.",
+    content: `Each October, communities, clinicians, educators, and advocates around the world come together to observe **ADHD Awareness Month**. The mission of this global campaign is straightforward yet transformative: to correct pervasive myths, eradicate social stigma, share evidence-based information, and empower individuals living with **Attention Deficit Hyperactivity Disorder (ADHD)**.
+
+For decades, ADHD was widely misunderstood as mere "restlessness," poor discipline, or a childhood phase. Today, modern neuroscience recognizes ADHD as a complex neurodevelopmental condition that affects how the brain regulates attention, executive functioning, and emotional impulses.
+
+At **Bellevue Multispeciality Hospital**, our medical and neurological specialists emphasize early recognition, accurate diagnosis, and personalized management plans to help individuals with ADHD thrive.
+
+---
+
+## What Exactly Is ADHD?
+
+ADHD is a chronic neurological variation primarily involving dysregulation of key neurotransmitters—specifically **dopamine** and **norepinephrine**—in the prefrontal cortex. This region of the brain is responsible for **executive functions**, including:
+
+* Sustaining and shifting focus
+* Working memory and organization
+* Time perception and forward planning
+* Impulse regulation and emotional control
+* Task initiation and sustained effort
+
+Rather than an outright "deficit" of attention, clinicians often describe ADHD as an **inability to reliably regulate and direct attention** where it is needed most.
+
+---
+
+## The Three Main Presentations of ADHD
+
+ADHD manifests differently across individuals and genders, categorized into three distinct clinical presentations:
+
+### 1. Predominantly Inattentive Presentation
+Often underdiagnosed because it lacks disruptive physical hyperactivity. Individuals may exhibit:
+* Difficulty sustaining attention on routine, non-stimulating tasks
+* Frequent careless mistakes in schoolwork or workplace documents
+* Being easily distracted by extraneous stimuli or internal thoughts
+* Chronic misplacement of essential items (keys, phones, documents)
+* "Daydreaming" or appearing not to listen when spoken to directly
+* Severe struggle with organization, scheduling, and follow-through
+
+### 2. Predominantly Hyperactive-Impulsive Presentation
+Characterized by physical restlessness and rapid, unfiltered reactions:
+* Constant fidgeting, tapping hands/feet, or squirming in seats
+* Inability to remain seated in settings where stillness is expected
+* Talking excessively and interrupting conversations or finishing others' sentences
+* Difficulty waiting one’s turn in line or during group activities
+* Acting impulsively without considering long-term consequences
+
+### 3. Combined Presentation
+The individual exhibits a significant number of both inattentive and hyperactive-impulsive symptoms. This is the most frequently diagnosed form in school-aged children.
+
+---
+
+## ADHD Across the Lifespan: Children vs. Adults
+
+### In Children and Adolescents
+In young children, ADHD often shows up as difficulty adhering to classroom routines, frequent emotional outbursts, academic inconsistency, and social friction with peers. Notably, **girls with ADHD** often internalize their struggles—presenting with quiet inattention, daydreaming, or anxiety—leading to underdiagnosis or delayed diagnosis until adulthood.
+
+### In Adults
+Contrary to past beliefs, up to **60% to 70% of individuals continue experiencing ADHD symptoms into adulthood**. In adults, physical hyperactivity often internalizes into mental restlessness and can present as:
+* **Time Blindness:** Chronic lateness, underestimating task durations, or severe deadline panic.
+* **Executive Paralysis:** Feeling completely overwhelmed when starting large, multi-step projects.
+* **Hyperfocus:** Intense, hours-long absorption in deeply stimulating hobbies, while struggling to start basic administrative tasks.
+* **Emotional Dysregulation:** Heightened sensitivity to perceived rejection, sudden frustration, and emotional exhaustion.
+* **Burnout:** Cycles of intense productivity followed by deep fatigue and career dissatisfaction.
+
+---
+
+## Debunking Common Myths About ADHD
+
+* **Myth 1: "ADHD is just an excuse for laziness or bad parenting."**
+  * *Fact:* Neuroimaging studies clearly demonstrate structural and functional differences in brain connectivity and dopamine pathways. ADHD is a genuine neurobiological condition.
+* **Myth 2: "People with ADHD can never pay attention."**
+  * *Fact:* Individuals with ADHD can focus intensely—sometimes for hours—when an activity provides immediate feedback, novelty, or deep interest (hyperfocus). The difficulty is in regulating focus toward mundane, necessary tasks.
+* **Myth 3: "Only boys get ADHD."**
+  * *Fact:* ADHD affects individuals of all genders equally. Girls and women are frequently diagnosed later in life because their symptoms tend to lean toward inattention rather than physical disruption.
+* **Myth 4: "ADHD is just an academic problem."**
+  * *Fact:* ADHD affects sleep hygiene, financial management, driving safety, emotional well-being, and interpersonal relationships.
+
+---
+
+## Multi-Modal Treatment & Supportive Strategies
+
+Effective ADHD management does not rely on a single solution; it combines lifestyle adjustments, psychological strategies, and medical oversight:
+
+1. **Psychoeducation:** Understanding your own brain wiring is the first step toward self-compassion and overcoming years of self-criticism.
+2. **Cognitive Behavioral Therapy (CBT) & Coaching:** Specialized behavioral therapy helps build executive functioning tools, time management systems, and emotional coping mechanisms.
+3. **Structured Daily Environment:** Visual planners, time timers, external checklists, breaking large tasks into micro-steps, and minimizing workplace distractions.
+4. **Physical Wellness & Sleep:** Regular cardiovascular exercise dramatically boosts natural dopamine levels, while consistent sleep schedules reduce cognitive fatigue.
+5. **Medical Evaluation:** When indicated, neurological or psychiatric consultation can determine whether medical interventions can safely restore neurotransmitter balance.
+
+---
+
+## Compassionate Clinical Support at Bellevue Hospital Mumbai
+
+If you, your child, or a loved one are experiencing persistent challenges with attention, emotional regulation, or organizational focus, seeking a professional evaluation can be life-changing.
+
+At **Bellevue Multispeciality Hospital in Andheri West, Mumbai**, our clinical team provides:
+* Comprehensive medical, pediatric, and neurological health assessments.
+* Evaluation to rule out underlying medical causes such as thyroid imbalances, sleep apnea, vitamin deficiencies, or chronic stress.
+* Supportive, non-judgmental guidance for individuals and families navigating neurodiversity.
+
+**This October, let us replace stigma with understanding, and frustration with actionable support.** Reach out to Bellevue Multispeciality Hospital to consult our medical professionals today.`,
+    author: "Department of Neurology & Behavioral Health",
+    date: "October 1, 2026",
+    category: "Neurology",
+    imageUrl: "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
     id: "bellevue-hospital-dn-nagar-emergency-multispeciality",
     title: "Bellevue Hospital DN Nagar: Fastest Emergency & Multispeciality Care Opposite Gate 3",
     excerpt: "Located directly opposite Gate No. 3 of D.N. Nagar Metro Station, Bellevue Hospital DN Nagar provides rapid 24/7 emergency response, intensive care, and multispeciality consultations without traffic delays.",
