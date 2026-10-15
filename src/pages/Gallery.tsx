@@ -7,6 +7,7 @@ export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Robot%20Assistec%20Surgcak%20System.jpeg", label: "Robot-Assisted Surgical System" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%201.png", label: "Gallery Image 1" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%202.png", label: "Gallery Image 2" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%203.png", label: "Gallery Image 3" },
@@ -18,8 +19,7 @@ export default function Gallery() {
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%209.png", label: "Gallery Image 9" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2010.png", label: "Gallery Image 10" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2011.png", label: "Gallery Image 11" },
-    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2012.png", label: "Gallery Image 12" },
-    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Robot%20Assistec%20Surgcak%20System.jpeg", label: "Robot-Assisted Surgical System" }
+    { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%2012.png", label: "Gallery Image 12" }
   ];
 
   const gallerySchema = {
