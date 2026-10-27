@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import { Play } from 'lucide-react';
 import SEO from '../components/SEO';
 import ImageSliderModal from '../components/ImageSliderModal';
 
@@ -7,6 +8,11 @@ export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const images = [
+    { 
+      src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/bellevue%20multispeciality%20hospital.mp4", 
+      label: "Bellevue Multispeciality Hospital Tour",
+      isVideo: true
+    },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Robot%20Assistec%20Surgcak%20System.jpeg", label: "Robot-Assisted Surgical System" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%201.png", label: "Gallery Image 1" },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Image%202.png", label: "Gallery Image 2" },
@@ -57,18 +63,39 @@ export default function Gallery() {
               viewport={{once:true}} 
               transition={{duration:0.4, delay: i * 0.05}}
               key={i} 
-              className="relative group overflow-hidden rounded-2xl shadow-sm cursor-pointer aspect-[4/3]"
+              className="relative group overflow-hidden rounded-2xl shadow-sm cursor-pointer aspect-[4/3] bg-black"
               onClick={() => setSelectedIndex(i)}
             >
-              <img 
-                src={img.src} 
-                alt={img.label} 
-                width={800}
-                height={600}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
+              {img.isVideo ? (
+                <>
+                  <video 
+                    src={img.src} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    muted
+                    playsInline
+                    preload="metadata"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-14 h-14 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
+                      <Play className="w-6 h-6 fill-white ml-0.5" />
+                    </div>
+                  </div>
+                  <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 pointer-events-none">
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+                    Video Tour
+                  </div>
+                </>
+              ) : (
+                <img 
+                  src={img.src} 
+                  alt={img.label} 
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  referrerPolicy="no-referrer"
+                  loading="lazy"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-6 w-full">
                   <h3 className="text-white font-bold text-xl">{img.label}</h3>

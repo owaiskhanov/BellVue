@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ImageSliderModalProps {
-  images: { src: string; alt?: string; label?: string }[];
+  images: { src: string; alt?: string; label?: string; isVideo?: boolean }[];
   initialIndex: number;
   isOpen: boolean;
   onClose: () => void;
@@ -73,6 +73,7 @@ export default function ImageSliderModal({ images, initialIndex, isOpen, onClose
   };
 
   const currentImage = images[currentIndex];
+  const isVideo = Boolean(currentImage?.isVideo || currentImage?.src?.toLowerCase().includes('.mp4'));
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4">
@@ -105,35 +106,59 @@ export default function ImageSliderModal({ images, initialIndex, isOpen, onClose
 
       <div className="relative w-full max-w-5xl h-[70vh] md:h-[80vh] flex flex-col items-center justify-center overflow-hidden pointer-events-none">
         <AnimatePresence initial={false} custom={direction}>
-          <motion.img
-            key={currentIndex}
-            src={currentImage.src}
-            alt={currentImage.alt || currentImage.label}
-            custom={direction}
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              x: { type: "spring", stiffness: 300, damping: 30 },
-              opacity: { duration: 0.2 }
-            }}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(e, { offset, velocity }) => {
-              const swipe = swipePower(offset.x, velocity.x);
-              if (swipe < -swipeConfidenceThreshold) {
-                paginate(1);
-              } else if (swipe > swipeConfidenceThreshold) {
-                paginate(-1);
-              }
-            }}
-            className="absolute max-h-full max-w-full object-contain rounded-lg shadow-2xl cursor-grab active:cursor-grabbing pointer-events-auto"
-            referrerPolicy="no-referrer"
-            loading="lazy"
-            draggable={false}
-          />
+          {isVideo ? (
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 }
+              }}
+              className="absolute max-h-full max-w-full flex items-center justify-center pointer-events-auto"
+            >
+              <video
+                src={currentImage.src}
+                controls
+                autoPlay
+                playsInline
+                className="max-h-[70vh] md:max-h-[78vh] max-w-full rounded-lg shadow-2xl bg-black"
+              />
+            </motion.div>
+          ) : (
+            <motion.img
+              key={currentIndex}
+              src={currentImage.src}
+              alt={currentImage.alt || currentImage.label}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 }
+              }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={1}
+              onDragEnd={(e, { offset, velocity }) => {
+                const swipe = swipePower(offset.x, velocity.x);
+                if (swipe < -swipeConfidenceThreshold) {
+                  paginate(1);
+                } else if (swipe > swipeConfidenceThreshold) {
+                  paginate(-1);
+                }
+              }}
+              className="absolute max-h-full max-w-full object-contain rounded-lg shadow-2xl cursor-grab active:cursor-grabbing pointer-events-auto"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              draggable={false}
+            />
+          )}
         </AnimatePresence>
       </div>
       
