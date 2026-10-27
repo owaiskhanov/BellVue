@@ -9,8 +9,8 @@ export default function Gallery() {
 
   const images = [
     { 
-      src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/bellevue%20multispeciality%20hospital.mp4", 
-      label: "Bellevue Multispeciality Hospital Tour",
+      src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/_Bellevue%20Multispeciality%20Hospital.mp4", 
+      label: "Robotic Surgery",
       isVideo: true
     },
     { src: "https://khssjcstrvidiuubzykw.supabase.co/storage/v1/object/public/BellVue%20Hospital%20Files/Bellvue%20Remake/Gallery/Robot%20Assistec%20Surgcak%20System.jpeg", label: "Robot-Assisted Surgical System" },
